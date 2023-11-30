@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import * as Images from '../assets/index.js';
+---
+
+<div class="relative h-screen">
+    <Image src={Images.somosheader} class="w-full h-full astro-a object-cover md:object-none" alt="Astro logo" />
+    
+    <div class="bg-[#384753] absolute bottom-0 transform rounded-t-lg rounded-b-lg blackdrop-card-somos left-2/4 -translate-x-2/4">
+        <div class="blackdrop_header rounded-t-lg md:px-20 py-5 bg-white text-[#384753] font-bold text-4xl px-10 text-center  ">
+            <h3 class="uppercase">Propósito</h3>
+            <p class="text-2xl font-normal">Y FILOSOFIA</p>
+        </div>
+        <div class="md:px-20 px-5 py-6 ">
+            <blockquote class="text-white">
+                Queremos Hacer del café un <br>
+                agente de cambio estamos aquí <br>
+                para conectar, para llevar los limites <br>
+                del café más allá, poniendo en valor <br>
+                el camino que lleva a diseñar un <br>
+                sabor único.
+            </blockquote>
+        </div>
+    </div>
+</div>

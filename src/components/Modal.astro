@@ -1,0 +1,40 @@
+---
+const {id, open, classProps} = Astro.props;
+---
+<style lang="scss">
+dialog {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  &::backdrop {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+    dialog {
+      width: 100%;
+      max-width: 100%;
+      transform: translate(0, 0);
+      top: 0;
+      left: 0;
+      margin: 0;
+    }
+  }
+</style>
+
+<button class={classProps} onclick={`window.${id}.showModal()`}>{open}</button>
+
+<dialog id={id} >
+  <slot name="main" />
+  <form method="dialog">
+    <slot name="close" />
+  </form>
+</dialog>
