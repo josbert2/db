@@ -15,7 +15,7 @@ import blackdrop from '../../assets/black_drop2.mp4';
 			<div class="absolute top-0 flex justify-center w-full pt-16">
 				<header class="site-header hidden md:block">
 					<nav class="navbar">
-						<ul class="nav-menu left md:pr-[350px] uppercase  flex gap-6">
+						<ul class="nav-menu left md:pr-[400px] uppercase  flex gap-6">
 							<li><a href="#" class=" text-md">Cápsulas</a></li>
 							<li><a href="#">Nosotros</a></li>
 							<li><a href="#">Suscripción</a></li>
@@ -49,7 +49,7 @@ import blackdrop from '../../assets/black_drop2.mp4';
 					</nav>
 				</header>
 				<div class="  md:hidden block w-full absolute top-0 left-0">
-					<div class="flex w-full px-3 py-3">
+					<div class="flex w-full px-6 py-6">
 						<a href="#" class="w-[120px]">
 							<Image src={Images.logoblackdrop} class="h-full w-full object-contain astro-a" alt="Astro logo" />
 						</a>
@@ -61,43 +61,46 @@ import blackdrop from '../../assets/black_drop2.mp4';
 					</div>
 				</div>
 			</div>
-			<div class="bg-[#384753] absolute bottom-0 transform rounded-t-lg rounded-b-lg blackdrop-card-somos left-2/4 -translate-x-2/4">
-				<div class="blackdrop_header rounded-t-lg md:px-20 py-5 bg-white text-[#384753] font-bold text-4xl px-10 text-center  ">
-					<h3 class="uppercase">Propósito</h3>
-					<p class="text-2xl font-normal">Y FILOSOFIA</p>
-				</div>
-				<div class="md:px-20 px-5 py-6 ">
-					<blockquote class="text-white">
-						Queremos Hacer del café un <br>
-						agente de cambio estamos aquí <br>
-						para conectar, para llevar los limites <br>
-						del café más allá, poniendo en valor <br>
-						el camino que lleva a diseñar un <br>
-						sabor único.
-					</blockquote>
+			<div class="absolute bottom-0 md:w-auto w-full md:px-0 px-7 transform left-2/4 -translate-x-2/4">
+				<div class="bg-[#384753]   rounded-t-lg rounded-b-lg blackdrop-card-somos ">
+					<div class="blackdrop_header rounded-t-lg md:px-20 py-5 bg-white text-[#384753] font-bold text-4xl px-10 text-center  ">
+						<h3 class="uppercase">Propósito</h3>
+						<p class="text-2xl font-normal">Y FILOSOFIA</p>
+					</div>
+					<div class="md:px-20 px-5 py-6 ">
+						<blockquote class="text-white">
+							Queremos Hacer del café un <br class="md:block hidden">
+							agente de cambio estamos aquí <br class="md:block hidden">
+							para conectar, para llevar los limites <br class="md:block hidden">
+							del café más allá, poniendo en valor <br class="md:block hidden">
+							el camino que lleva a diseñar un <br class="md:block hidden">
+							sabor único.
+						</blockquote>
+					</div>
 				</div>
 			</div>
+			
 		</div>
 		<section class="py-20 bg-white">
-			<div class="container">
+			<div class="container md:px-10 px-7">
 				<div class="grid md:grid-cols-12 mb-[-342px ]">
 					<div class="col-span-6 md:col-span-5">
 						<div class="text-[#384753] text-2xl  font-medium uppercase">
 							Nuestra hitoria
 						</div>
 						<p class="text-[#384753] text-sm font-medium pt-10 md:mb-0 mb-5">
-							Todo comienza en 2023, año en que nos juntamos <br>
-							para crear Blackdrop, despues de un largo recorrido <br>
-							por distintos caminos en el mundo del café y el diseño. <br>
-							Somos un grupo humano amante del café y todos sus <br>
-							matices, nos apasiona su gente, su sin fin de sabores y <br>
-							la capacidad de conexión que genera una taza en <br>
+							Todo comienza en 2023, año en que nos juntamos <br class="md:block hidden">
+							para crear Blackdrop, despues de un largo recorrido <br class="md:block hidden">
+							por distintos caminos en el mundo del café y el diseño. <br class="md:block hidden">
+							Somos un grupo humano amante del café y todos sus <br class="md:block hidden">
+							matices, nos apasiona su gente, su sin fin de sabores y <br class="md:block hidden">
+							la capacidad de conexión que genera una taza en <br class="md:block hidden">
 							múltiples direcciones.
 							<br>
 							<br>
-							Nuestra motivación y objetivo es promover la cultura <br>
-							del café sin limites, a través de la sostenibilidada, <br>
-							innovación y el diseño impactando positivamente en <br>
+							Nuestra motivación y objetivo es promover la cultura <br class="md:block hidden">
+							del café sin limites, a través de la sostenibilidada, <br class="md:block hidden">
+							innovación y el diseño impactando positivamente en <br class="md:block hidden">
 							el mundo a través de nuestras acciones. 
 	
 						</p>
@@ -126,7 +129,7 @@ import blackdrop from '../../assets/black_drop2.mp4';
 			</div>
 			<div class="flex justify-center md:mb-0 mb-10 z-50">
 				<div class="flex flex-col items-start md:px-60 px-10">
-					<div class="text-white md:mb-5 mb-0 md:text-[7rem] z-10 text-2xl font-bold text-center  leading-3" style="line-height: 1.1;">
+					<div class="text-white md:mb-5 mb-0 md:text-[7rem] z-10 text-[2.5rem] font-bold text-center  leading-3" style="line-height: 1.1;">
 						UNIQUE STORY
 					</div>
 					<div class="flex items-center md:mt-0 mt-5">
@@ -207,8 +210,8 @@ import blackdrop from '../../assets/black_drop2.mp4';
 						<div class="h-[166px] rounded-lg">
 							<Image src={Images.finca} class="rounded-lg w-full h-full object-cover astro-a" alt="" />
 						</div>
-						<div class="px-5">
-							<div class="header text-2xl py-5 text-left font-normal text-[#384753]">
+						<div class="px-5 pr-0 font-medium text-sm">
+							<div class="header text-2xl py-5 text-left font-medium text-[#384753]">
 								Agente de <br> cambio
 							</div>
 							Vemos el café como agente de
@@ -227,8 +230,8 @@ import blackdrop from '../../assets/black_drop2.mp4';
 						<div class="h-[166px]">
 							<Image src={Images.siempre} class="rounded-lg w-full h-full object-cover astro-a" alt="" />
 						</div>
-						<div class="px-5">
-							<div class="header text-2xl rounded-lg py-5 text-left font-normal text-[#384753]">
+						<div class="px-5  pr-0 font-medium text-sm">
+							<div class="header text-2xl rounded-lg py-5 text-left font-medium text-[#384753]">
 								Innovación <br> continua
 							</div>
 							Nos gusta ir más allá, donde no
@@ -246,8 +249,8 @@ import blackdrop from '../../assets/black_drop2.mp4';
 						<div class="h-[166px]">
 							<Image src={Images.innvo} class="rounded-lg w-full h-full object-cover astro-a" alt="" />
 						</div>
-						<div class="px-5">
-							<div class="header text-2xl rounded-lg py-5 text-left font-normal text-[#384753]">
+						<div class="px-5 pr-0 font-medium text-sm">
+							<div class="header text-2xl rounded-lg py-5 text-left font-medium text-[#384753]">
 								Siempre <br> calidad
 							</div>
 							En cada etapa nos esforzamos por
@@ -266,8 +269,8 @@ import blackdrop from '../../assets/black_drop2.mp4';
 						<div class="h-[166px]">
 							<Image src={Images.aprendizaje} class="rounded-lg w-full h-full object-cover astro-a" alt="" />
 						</div>
-						<div class="px-5">
-							<div class="header text-2xl rounded-lg py-5 text-left font-normal text-[#384753]">
+						<div class="px-5 pr-0 font-medium text-sm">
+							<div class="header text-2xl rounded-lg py-5 text-left font-medium text-[#384753]">
 								Aprendizaje <br> Constante
 							</div>
 								La excelencia en la preparación de
@@ -292,7 +295,7 @@ import blackdrop from '../../assets/black_drop2.mp4';
 				<div class="container z-20 relative">
 					<div class="grid md:grid-cols-2">
 						<div class="">
-							<div class="text-3xl uppercase  font-semibold text-[#FFF] pb-10">
+							<div class="text-3xl uppercase tracking-wide  font-semibold text-[#FFF] pb-10">
 								NUESTRAS TIENDAS
 							</div>
 							<p class="text-white font-medium">
