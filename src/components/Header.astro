@@ -39,16 +39,84 @@ import * as Images from '../assets/index.js';
             </ul>
         </nav>
     </header>
+      
     <div class="  md:hidden block w-full absolute top-0 left-0">
-        <div class="flex w-full px-6 py-6">
+        <div class="flex w-full px-6 py-6 layout">
             <a href="#" class="w-[120px]">
                 <Image src={Images.logoblackdrop} class="h-full w-full object-contain astro-a" alt="Astro logo" />
             </a>
-            <div class="ml-auto">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <div class="ml-auto menu-icon header">
+                <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path></svg>
                 </button>
             </div>
         </div>
     </div>
+    <div class="menu">
+        <div class="app-menu">
+            <div class="absolute top-5 right-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-11 h-11">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <div class="flex flex-col justify-center items-center h-full">
+                <div class="">
+                    <ul class="nav-menu left items-center pt-[100px]  uppercase  flex flex-col gap-6">
+                        <li><a href="#" class=" text-md">Cápsulas</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Suscripción</a></li>
+            
+                        <li><a href="#">Sustentabilidad</a></li>
+                        <li><a href="#">Black Drop</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="pb-5 flex justify-center mt-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="72.839" height="72.838" viewBox="0 0 72.839 72.838">
+                        <g id="Grupo_12" data-name="Grupo 12" transform="translate(-1424.802 -1421.443)">
+                            <path
+                                id="Trazado_40"
+                                data-name="Trazado 40"
+                                d="M1461.166,1421.443a36.419,36.419,0,1,0,36.475,36.5,36.44,36.44,0,0,0-36.475-36.5m-.219,69.554a33.155,33.155,0,1,1,33.449-33.026A33.208,33.208,0,0,1,1460.947,1491"
+                                fill="#f2f4f4"
+                            ></path>
+                            <path
+                                id="Trazado_41"
+                                data-name="Trazado 41"
+                                d="M1461.415,1462.465c-1.922,4.22-3.776,8.009-5.373,11.9-.924,2.253.255,5.014,2.34,6.419a5.677,5.677,0,0,0,6.557-.29,5.5,5.5,0,0,0,1.853-6.424c-1.63-3.766-3.441-7.453-5.377-11.608m1.44,15.361a3.781,3.781,0,0,1-2.874-.031c-1.1-.527-1.266-1.74-.741-2.9.659-1.456,1.349-2.9,2.174-4.667.841,1.8,1.536,3.242,2.194,4.7.522,1.159.352,2.381-.753,2.9"
+                                fill="#f2f4f4"
+                            ></path>
+                            <path id="Trazado_42" data-name="Trazado 42" d="M1468.22,1440.23l-2.659-1.891-4.559,6.168-2.234-3.133c-.7-.984-1.4-1.967-2.183-3.057l-2.664,1.9c2.39,3.38,4.652,6.576,7.056,9.974l7.243-9.959" fill="#f2f4f4"></path>
+                            <path id="Trazado_43" data-name="Trazado 43" d="M1480.517,1439.4l-2.529-2.161-16.837,19.7-16.837-19.7-2.529,2.161,16.055,18.787h-17.25v3.041h41.262v-3.041h-17.391Z" fill="#f2f4f4"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+
+    
 </div>
+
+<script is:inline>
+    function toggleClassMenu() {
+        myMenu.classList.add("menu--animatable");        
+        if(!myMenu.classList.contains("menu--visible")) {                
+            myMenu.classList.add("menu--visible");
+        } else {
+            myMenu.classList.remove("menu--visible");                
+        }        
+    }
+
+    function OnTransitionEnd() {
+        myMenu.classList.remove("menu--animatable");
+    }
+
+    var myMenu = document.querySelector(".menu");
+    var oppMenu = document.querySelector(".menu-icon");
+    myMenu.addEventListener("transitionend", OnTransitionEnd, false);
+    oppMenu.addEventListener("click", toggleClassMenu, false);
+    myMenu.addEventListener("click", toggleClassMenu, false);
+
+</script>

@@ -14,33 +14,33 @@ import Header from '../../components/Header.astro';
 			<Image src={Images.headersocial} class="w-full h-full astro-a object-cover " alt="Astro logo" />
 			<Header />
 			
-			<div class=" absolute flex-col flex  bottom-0 transform rounded-t-lg rounded-b-lg  left-0 w-full ">
+			<div class=" absolute z-10 flex-col flex bottom-[-250px]  md:bottom-0 transform rounded-t-lg rounded-b-lg  left-0 w-full ">
 				<div class="container mx-auto">
-					<div class="blackdrop_header rounded-t-lg md:px-20 py-5  text-white font-bold text-4xl px-5 text-left  ">
-						<h3 class="uppercase">COMPROMISO <br> SOCIAL</h3>
-						<p class="text-xs font-normal mt-4">La inspiración y motivación que nos entrega cada taza de café <br>
-							nos mueve a comprometernos con una caficultura sustentable, <br>
-							resiliente y que transforma vidas y por sobre todo entrega <br>
+					<div class="blackdrop_header rounded-t-lg md:px-20 md:py-5  text-white font-bold text-4xl px-5 text-left  ">
+						<h3 class="uppercase md:text-[57px] md:leading-[59px]">COMPROMISO <br class="md:block hidden"> SOCIAL</h3>
+						<p class="text-[13px] font-normal mt-4  leading-[21px]">La inspiración y motivación que nos entrega cada taza de café <br class="md:block hidden">
+							nos mueve a comprometernos con una caficultura sustentable, <br class="md:block hidden">
+							resiliente y que transforma vidas y por sobre todo entrega <br class="md:block hidden">
 							oportunidades.</p>
 					</div>
 					<div class="md:px-20 px-5 pt-20 pb-20">
 						<div class="grid md:grid-cols-2 ">
 							<div class="">
 								<div class="text-3xl uppercase  font-semibold text-[#384753]">
-									<h4 class="mb-3">SON MÁS DE 25 MM <br> DE CAFICULTORES</h4>
-									<p class="font-medium text-xs">
-										en todo el mundo y 125mm de personas que dependen del café <br>
-										en las fases iniciales de la cadena que se ven afectadas por <br>
-										diversas problemáticas, siendo una la que más nos preocupa, el <br>
+									<h4 class="mb-3 font-medium text-[22px] md_text-[27px]">SON MÁS DE 25 MM <br class="md:block hidden"> DE CAFICULTORES</h4>
+									<p class="font-medium  text-[12px] leading-[21px]">
+										en todo el mundo y 125mm de personas que dependen del café <br class="md:block hidden">
+										en las fases iniciales de la cadena que se ven afectadas por <br class="md:block hidden">
+										diversas problemáticas, siendo una la que más nos preocupa, el <br class="md:block hidden">
 										futuro de los jóvenes, dado que compromete el futuro del café.
 									</p>
 								</div>
 							</div>
-							<div class="md:border-l md:pl-20 borde-0 border-[#384753] ">
+							<div class="md:border-l md:pl-10 md:ml-10 borde-0 border-[#384753]  md:pt-0 pt-10">
 								<div class="text-3xl uppercase font-semibold text-[#384753]">
-									<h4 class="mb-3">NUESTRO <br> COMPROMISO</h4>
-									<p class="font-medium text-xs">
-										Nuestro compromiso va desde la semilla a la taza ( bean to cup ),<br>
+									<h4 class="mb-3 font-medium text-[22px] md_text-[27px]">NUESTRO <br class="md:block hidden"> COMPROMISO</h4>
+									<p class="font-medium  text-[12px] leading-[21px]">
+										Nuestro compromiso va desde la semilla a la taza ( bean to cup ),<br class="md:block hidden">
 										vamos más allá tratando de cambiar el modelo.
 									</p>
 								</div>
@@ -52,12 +52,12 @@ import Header from '../../components/Header.astro';
 		</div>
 	
 
-		<section class="py-20 pt-5 bg-white relative" style={` `}>
+		<section class="py-20 md:pt-5 pt-72 bg-white relative" style={` `}>
 			<div class=" md:px-0 px-5">
-				<div class="text-3xl uppercase text-center font-semibold text-[#384753]">
+				<div class=" uppercase text-[27px] text-center font-medium text-[#384753]">
 					ACTUALIDAD ¿PROBLEMÁTICA?
 				</div>
-				<p class="text-center pt-4 text-sm font-medium text-[#384753]">
+				<p class="text-center pt-5 text-[13px] font-medium text-[#384753]">
 					Como bien sabes el café históricamente ha estado bajo serias amenazas, algunas <br>
 					de data histórica como:
 				</p>
@@ -69,16 +69,16 @@ import Header from '../../components/Header.astro';
 							<Image src={Images.finca} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
 						</div>
 						<div class="px-5 text-center items-center  flex flex-col h-full">
-							<div class="header text-2xl py-5 text-center  font-semibold text-[#384753]">
+							<div class="header text-[23px] py-5 px-5 text-center  font-medium text-[#384753]">
 								Fluctuación de precios
 							</div>
-							<p  class="text-[14px] mb-10">Alta ﬂuctuación de precios e
+							<p  class="text-[13px] font-medium mb-10">Alta ﬂuctuación de precios e
 								inestabilidad del mercado del café
 								generando incertidumbre y bajos
 								precios a los caﬁcultores.</p>
 							
 
-							<Modal id="precio" open="CONOCE MÁS" classProps='border-[#384753] border-2 border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
+							<Modal id="precio" open="CONOCE MÁS" classProps='border-[#384753] border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
 								<main slot="main">
 									<div class="md:grid flex flex-col md:grid-cols-5">
 										<div class=" col-span-2 bg-[#384753] h-full px-10 py-3 md:mr-4">
@@ -102,11 +102,11 @@ import Header from '../../components/Header.astro';
 											</svg>
 										</div>
 										<div class="col-span-3 pt-10 pb-10">
-											<div class="m max-h-[550px] overflow-auto list_container">
-												<div class="header text-2xl py-5 pt-0 text-left px-8  font-semibold text-[#384753]">
+											<div class="m max-h-[550px] overflow-auto md:pl-0 pl-2 list_container">
+												<div class="header text-[23px] md:pb-5 md:pl-3 pl-5 text-left  font-medium text-[#384753]">
 													PRECIO
 												</div>
-												<p class="text-[14px]  text-left md:px-8 pb-10">
+												<p class="text-[13px] font-medium  text-left md:px-8 pb-10 md:pl-3 pl-5">
 													El precio del café en bolsa tiene un impacto significativo en los productores de café <br>
 													 debido a la estructura del mercado y la dependencia económica de muchos países en la   <br> 
 													 producción y exportación de café. Aquí hay algunas razones clave: <br> <br>
@@ -140,7 +140,7 @@ import Header from '../../components/Header.astro';
 									</div>
 								</main>
 								<button slot="close" class="absolute top-1 right-3">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
 										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 									</svg>
 								</button>
@@ -153,10 +153,10 @@ import Header from '../../components/Header.astro';
 							<Image src={Images.siempre} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
 						</div>
 						<div class="px-5 text-center items-center  flex flex-col h-full">
-							<div class="header text-2xl py-5 text-center  font-semibold text-[#384753]">
+							<div class="header text-[23px] py-5 text-center  md:pl-0 pl-3 font-medium text-[#384753]">
 								El cambio climático
 							</div>
-							<p  class="text-[14px] mb-10">El cambio climático es una realidad que se
+							<p  class="text-[13px] font-medium mb-10">El cambio climático es una realidad que se
 							viene manifestando con mayor intensidad
 							en la última década afectando los ciclos de
 							cosecha y productividad, y entregando una
@@ -164,9 +164,9 @@ import Header from '../../components/Header.astro';
 							cosecha a los productores.</p>
 						
 
-							<Modal id="climatico" open="CONOCE MÁS" classProps='border-[#384753] border-2 border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
+							<Modal id="climatico" open="CONOCE MÁS" classProps='border-[#384753] border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
 								<main slot="main">
-									<div class="grid grid-cols-5">
+									<div class="md:grid flex flex-col md:grid-cols-5">
 										<div class=" col-span-2 bg-[#384753] h-full px-10 py-3 md:mr-4">
 											<svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="0 0 288.203 374.853">
 												<g id="Componente_2_1" data-name="Componente 2 – 1" transform="translate(1.5 1.5)">
@@ -195,11 +195,11 @@ import Header from '../../components/Header.astro';
 										</div>
 										<div class="col-span-3 pt-10 pb-10">
 											<div class="m max-h-[550px] overflow-auto list_container">
-												<div class="header text-2xl py-5 pt-0 text-left px-8  font-semibold text-[#384753]">
+												<div class="header md:pl-3 pl-5 text-[23px] py-5 text-left  font-medium text-[#384753]">
 													CAMBIO CLIMATICO
 
 												</div>
-												<p class="text-[14px]  text-left px-8 pb-10">
+												<p class="text-[13px] font-medium  text-left px-8 pb-10 md:pl-3 pl-5  ">
 													fLos efectos del cambio climático amenazan cada vez más el futuro de las  comunidades agrícolas y los medios de subsistencia de las familias campesinas. Se  proyecta que hasta el 50% de la tierra actualmente dedicada al cultivo de café podría volverse inapropiada para este propósito hacia el año 2050, debido al aumento de las temperaturas y eventos climáticos extremos. Asimismo, se estima que alrededor del 60% de las especies de café silvestre enfrentarán la amenaza de extinción para finales  de este siglo. <br><br>
 
 													El aumento de las temperaturas y la fluctuación de los regímenes pluviales crean  condiciones de cultivo que repercuten en la productividad, contribuyen a una mayor incidencia de plagas y enfermedades, afectan a la  calidad y, en última instancia, la rentabilidad de las explotaciones. A medida que las soluciones climáticas se basan cada vez más en prácticas innovadoras y nuevas tecnologías, el potencial desaprovechado de la juventud ofrece enormes oportunidades para seguir avanzando,  ya que las generaciones más jóvenes han demostrado ser altamente y flexibles a la hora de integrar nuevas ideas y prácticas.<br><br>
@@ -212,8 +212,8 @@ import Header from '../../components/Header.astro';
 
 									</div>
 								</main>
-								<button slot="close" class="absolute top-1 right-3">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<button slot="close" class="absolute top-1 right-3 ">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
 										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 									</svg>
 								</button>
@@ -225,19 +225,19 @@ import Header from '../../components/Header.astro';
 							<Image src={Images.innvo} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
 						</div>
 						<div class="px-5 text-center items-center  flex flex-col h-full">
-							<div class="header text-2xl py-5 text-center  font-semibold text-[#384753]">
+							<div class="header text-[23px] py-5 text-left px-5  font-medium text-[#384753]">
 								Baja motivación
 							</div>
-								<p class="text-[14px] mb-10">Una última amenaza que nace a partir de
+								<p class="text-[13px] font-medium mb-10">Una última amenaza que nace a partir de
 								las dos mencionadas anteriormente y afecta
 								a las bases y proyección de la caﬁcultura es
 								la baja motivación de las nuevas
 								generaciones de cafeteros y su migración a
 								las grandes ciudades en busca de nuevas y
 								estables oportunidades.</p>
-								<Modal id="MOTIVACION" open="CONOCE MÁS" classProps='border-[#384753] border-2 border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
+								<Modal id="MOTIVACION" open="CONOCE MÁS" classProps='border-[#384753] border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
 									<main slot="main">
-										<div class="grid grid-cols-5">
+										<div class="md:grid flex flex-col md:grid-cols-5">
 											<div class=" col-span-2 bg-[#384753] h-full px-10 py-3 md:mr-4">
 												<svg xmlns="http://www.w3.org/2000/svg"  class="h-full w-full" viewBox="0 0 280.717 377.753">
 													<g id="Componente_2_1" data-name="Componente 2 – 1" transform="translate(1.5 1.5)">
@@ -262,10 +262,10 @@ import Header from '../../components/Header.astro';
 											</div>
 											<div class="col-span-3 pt-10 pb-10">
 												<div class="m max-h-[550px] overflow-auto list_container">
-													<div class="header text-2xl py-5 pt-0 text-left px-8  font-semibold text-[#384753]">
+													<div class="header text-[23px] py-5 text-left md:pl-3 pl-5  font-medium text-[#384753]">
 														BAJA MOTIVACION
 													</div>
-													<p class="text-[14px]  text-left px-8 pb-10">
+													<p class="text-[13px] font-medium  text-left px-8 pb-10 md:pl-3 pl-5 ">
 													
 														El impacto de la crisis climática en la producción global de café viene a rematar una  situación sobrecalentada que históricamente sufrió la inestabilidad de los precios de mercado, pero hoy a la nueva generación de caficultores se le suma el cambio climático que ya es una dura realidad. Un fenómeno menos destacado de la emergencia climática es la masiva deserción de jóvenes productores de café en todo el mundo. La inestabilidad financiera, exacerbada por la crisis climática, hace que el cultivo de café sea cada vez más precario como perspectiva profesional para estos jóvenes innovadores, esenciales para asegurar el futuro de la producción mundial.<br><br>
 														
@@ -283,7 +283,7 @@ import Header from '../../components/Header.astro';
 										</div>
 									</main>
 									<button slot="close" class="absolute top-1 right-3">
-										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white md:text-gray-300">
 											<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 										</svg>
 									</button>
@@ -293,7 +293,7 @@ import Header from '../../components/Header.astro';
 					
 				</div>
 			</div>
-			<p class="text-center  font-medium pt-6 text-sm text-[#384753]">
+			<p class="text-center  font-medium pt-11 text-[13px] text-[#384753]">
 				Esta última amenaza el futuro del café pero a la vez es nuestro compromiso y la oportunidad <br>
 para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 			</p>
@@ -303,14 +303,14 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 		<section class="py-20 pt-5 bg-white relative" style={` `}>
 			<div class="container px-5 md:px-20 pt-16  mx-auto">
 				<div class="md:grid md:grid-cols-2 gap-5">
-					<div class="md:px-20 md:py-20 pt-0 md:pb-0 pb-10">
-						<Image src={Images.vision} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
+					<div class="md:px-20 md:py-20 md:pt-0 md:pb-0 pb-10 vision-blackdrop">
+						<Image src={Images.vision} class="rounded-t-lg w-full h-full object-cover astro-a " alt="" />
 					</div>
 					<div class="">
-						<div class="text-3xl uppercase text-left  font-normal text-[#384753]">
+						<div class="text-[27px] uppercase text-left  font-medium text-[#384753]">
 							VISIÓN
 						</div>
-						<p class="text- pt-4 text-sm font-medium text-[#384753]">
+						<p class="text- pt-4 text-[13px] font-medium text-[#384753]">
 							Un paso a la vez, nuestras acciones determinarán nuestro <br class="md:block hidden">
 							impacto, nuestro compromiso bean to cup es con el presente y  <br class="md:block hidden">
 							futuro del café por eso que blackdrop estamos comprometidos  <br class="md:block hidden">
@@ -330,21 +330,25 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 		<section class="md:py-20 py-5 md:pt-5 bg-[#F1F4F4] relative" style={` `}>
 			<div class="container md:px-20 md:pt-16 mx-auto pb-10">
 				<div class="grid md:grid-cols-2 gap-5">
-					<div class="   pt-20 pr-6">
-						<div class="blackdrop_header rounded-t-lg  py-5 border-b border-[#384753]/30 pb-4  text-white font-bold text-4xl  text-left  ">
-							<h3 class="uppercase font-medium text-[#384753]">
+					<div class="   pt-20 pr-6 md:ml-14">
+						<div class="blackdrop_header rounded-t-lg  py-5   text-white font-bold text-4xl  text-left  ">
+							<h3 class="uppercase text-2xl md:text-[42px] font-bold text-[#384753]">
 								CONOCE NUESTRO <br>
 								PRIMER PROYECTO :
 							</h3>
-							<p class="font-normal mt-4 text-[#384753]  text-xl">
+							
+							<p class="font-medium mt-4 text-[#384753] leading-[30px]  text-[18px] md:text-[23px]">
 								Jóvenes impulsando la innovación <br>
 								climática en Honduras
 							</p>
 						</div>
-						<p class="text-left  font-medium pt-6 text-sm text-[#384753]">
-							Nos sumamos a la fundación internacional Hanns r. Neumann 
-							stiftung, en un programa donde nos comprometemos con jóvenes 
-							innovadores contra el cambio climático, conoce a continuación el 
+						<div class="md:pr-20">
+							<div class="border-b border-[#384753]/30 pb-4"></div>
+						</div>
+						<p class="text-left  font-medium pt-6 text-[13px] text-[#384753]">
+							Nos sumamos a la fundación internacional Hanns r. Neumann  <br class="md:block hidden">
+							stiftung, en un programa donde nos comprometemos con jóvenes   <br class="md:block hidden">
+							innovadores contra el cambio climático, conoce a continuación el   <br class="md:block hidden">
 							impacto que tiene tu preferencia.
 							</p>
 							<div class="px-3">
@@ -360,42 +364,42 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 				<div class='border-t border-[#384753]/30 w-full'></div>
 			</div>
 			<div class="grid md:grid-cols-5 md:px-20 mt-4  ">
-				<div class="md:ml-0 ml-5 col-span-2 md:flex md:justify-center items-center">
-					<div class="text-2xl uppercase text-left  font-semibold text-[#384753]">
-						OBJETIVOS <br>MACRO
+				<div class="md:ml-0 ml-5 col-span-2 md:flex   items-center">
+					<div class="text-[27px] uppercase text-center md:text-left   md:pl-24 font-medium text-[#384753]">
+						OBJETIVOS <br class="md:block hidden">MACRO
 					</div>
 				</div>
-				<div class="divide-x flex md:flex-row flex-col col-span-3 gap-5  divide-[#384753]/30">
-					<p class="md:text-center  pl-5 font-medium pt-6 text-sm text-[#384753]">
-						Bajar la tasa de deserción de los <br> jóvenes en el café
+				<div class="divide-x flex md:flex-row md:justify-end md:pr-24 flex-col col-span-3 gap-5  divide-[#384753]/30">
+					<p class="md:text-center  pl-5 font-medium pt-6 text-[13px] text-[#384753] ">
+						Bajar la tasa de deserción de los <br class="md:block hidden"> jóvenes en el café
 					</p>
-					<p class="md:text-center pl-5 font-medium pt-6 text-sm text-[#384753]">
-						Fomentar la resiliencia de las  <br> comunidades frente al cambio  <br> Climático
+					<p class="md:text-center pl-5 font-medium pt-6 text-[13px] text-[#384753]">
+						Fomentar la resiliencia de las  <br class="md:block hidden"> comunidades frente al cambio  <br class="md:block hidden"> Climático
 
 					</p>
-					<p class="md:text-center pl-5  font-medium pt-6 text-sm text-[#384753]">
-						Empoderamiento de las nuevas  <br> generaciones de caficultores
+					<p class="md:text-center pl-5  font-medium pt-6 text-[13px] text-[#384753]">
+						Empoderamiento de las nuevas  <br class="md:block hidden"> generaciones de caficultores
 					</p>
 					
 				</div>
 			</div>
 			<div class="container px-5 md:px-20 pt-16 mx-auto  pb-10">
-				<div class="grid md:grid-cols-2 pt-10">
+				<div class="grid md:grid-cols-2 pt-10 md:pl-14">
 					<div class="md:mb-0 mb-5">
-						<div class="text-2xl uppercase text-left  font-semibold text-[#384753]">
+						<div class="text-[27px] uppercase text-left  font-medium text-[#384753]">
 							OBJETIVO
 						</div>
 						<p class="  font-medium pt-6 text-sm text-[#384753]">
-							Crear un ciclo de aprendizaje continuo que promueva la gestión <br>
-							sostenible de los recursos y desarrolle vías de emprendimiento <br>
-							a medida que los jóvenes adquieren confianza en sí mismos y <br>
-							habilidades para asumir roles de liderazgo activo en sus <br>
-							comunidades y dentro de sus organizaciones de agricultores <br>
+							Crear un ciclo de aprendizaje continuo que promueva la gestión <br class="md:block hidden">
+							sostenible de los recursos y desarrolle vías de emprendimiento <br  class="md:block hidden">
+							a medida que los jóvenes adquieren confianza en sí mismos y <br  class="md:block hidden">
+							habilidades para asumir roles de liderazgo activo en sus <br  class="md:block hidden">
+							comunidades y dentro de sus organizaciones de agricultores <br  class="md:block hidden">
 							para aumentar la resiliencia a los efectos del cambio climático.
 						</p>
 					</div>
 					<div class="">
-						<div class="text-2xl uppercase text-left  font-semibold text-[#384753]">
+						<div class="text-[27px] uppercase text-left  font-medium text-[#384753]">
 							A QUIÉN ESTÁ DIRIGIDO?
 						</div>
 						<p class="  font-medium pt-6 text-sm text-[#384753]">
@@ -409,14 +413,19 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 			</div>
 		</section>
 
-		<section class="bg-[#384753]">
-			<div class="container px-5 md:px-20 pt-16 mx-auto  pb-10">
+		<section class="bg-[#384753] relative">
+			<div class="absolute top-[-38px] left-2/4 transform -translate-x-2/4">
+				<svg xmlns="http://www.w3.org/2000/svg" width="76.802" height="76.802" viewBox="0 0 76.802 76.802">
+					<rect id="Rectángulo_65" data-name="Rectángulo 65" width="54.307" height="54.307" transform="translate(38.401) rotate(45)" fill="#f2f4f4"/>
+				</svg>
+			</div>
+			<div class="container px-5 md:px-20 pt-24 mx-auto  pb-10">
 				<div class="">
-					<div class="text-2xl uppercase text-center  font-normal text-[#F2F4F4]">
+					<div class="text-[27px] uppercase text-center  font-medium text-[#F2F4F4]">
 						PROYECTO HONDURAS
 					</div>
 					<div class="text-xl mt-16  reltaive relative flex  justify-center text-center  font-medium text-[#F2F4F4]">
-						<div class="relative">
+						<div class="relative text-[27px] leading-[36px]">
 							Jóvenes como agentes de cambio desarrollando <br>
 						 	comunidades resilientes
 							 <div class="absolute top-[-27px] left-[-67px]  md:block hidden">
@@ -448,24 +457,24 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 					</div>
 					
 					<div class="flex justify-center mt-8">
-						<p class="  font-medium pt-6 text-sm text-center text-[#F2F4F4]">
-							El proyecto se centra en desarrollar habilidades y herramientas entre jóvenes <br>
-							agricultores del Occidente de Honduras para afrontar de manera óptima la <br>
-							combinación del cultivo de café y el cambio climático. Al desarrollar este <br>
-							conocimiento, los jóvenes pueden tomar la iniciativa en el fortalecimiento de las <br>
-							organizaciones locales de productores de café y la mejora de la resiliencia climática. 
+						<p class="leading-[22px]  font-medium pt-6 text-[13.5px] text-center text-[#F2F4F4]">
+							El proyecto se centra en desarrollar habilidades y herramientas entre jóvenes <br class="md:block hidden">
+							agricultores del Occidente de Honduras para afrontar de manera óptima la <br class="md:block hidden">
+							combinación del cultivo de café y el cambio climático. Al desarrollar este conocimiento, <br class="md:block hidden">
+							los jóvenes pueden tomar la iniciativa en el fortalecimiento de las organizaciones<br class="md:block hidden">
+							locales de productores de café y la mejora de la resiliencia climática. 
 						</p>
 					</div>
-					<div class="text-2xl uppercase pt-20 text-center  font-normal text-[#F2F4F4]">
+					<div class="text-[27px] uppercase pt-20 text-center tracking-wider  font-medium text-[#F2F4F4]">
 						OBJETIVOS MEDIBLES <br> Y CUANTIFICABLES.
 					</div>
 					<div class="pt-20 pb-40">
 						<div class="grid md:grid-cols-3">
-							<div class="col-span-2 md:pr-10">
+							<div class="col-span-2 md:pr-10 md:p-24">
 								<Image src={Images.mapa} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
 							</div>
 							<div class="md:mt-0 mt-5">
-								<div class="grid grid-cols-2 gap-1">
+								<div class="grid grid-cols-2 gap-1 md:p-6" >
 									<div >
 										<Image src={Images.ma1} class="rounded-t-lg rounded-b-lg svg-scale-hover w-full h-full object-cover astro-a" alt="" />
 									</div>
@@ -494,21 +503,21 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 
 		<section class="py-20 pt-5 bg-[#F1F4F4] relative" style={` `}>
 			<div class="container px-5 md:px-20 pt-16 mx-auto  pb-10">
-				<div class="text-2xl uppercase text-center pb-5  font-semibold text-[#384753] ">
+				<div class="text-[27px] uppercase text-center pb-5  font-medium text-[#384753] ">
 					¿COMO ABARCAREMOS EL CAMBIO CLIMATICO?
 				</div>
 				<div class="md:px-40 p-5 md:py-20">
 					<Image src={Images.climatico} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
 				</div>
-				<div class="text-2xl uppercase text-center  font-semibold text-[#384753]">
+				<div class="text-[27px] uppercase text-center pb-5 md:pt-0 pt-10   font-medium text-[#384753]">
 					CASOS REALES
 					
 				</div>
 				<Modal id="yanci" open="" classProps='absolute '>
 					<main slot="main">
 						<div class="md:grid md:grid-cols-5">
-							<div class=" col-span-2 bg-[#384753] h-full  mr-4">
-								<Image src={Images.slider1} class="h-[636px]  w-full object-cover astro-a" alt="" />
+							<div class=" col-span-2 bg-[#384753] h-full  md:mr-4">
+								<Image src={Images.slider1} class="h-[350px] md:h-[636px]  w-full object-cover astro-a" alt="" />
 							</div>
 							<div class="col-span-3 pt-10 pb-10">
 								<div class="m max-h-[550px] overflow-auto list_container">
@@ -548,7 +557,7 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						</div>
 					</main>
 					<button slot="close" class="absolute top-1 right-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
@@ -556,8 +565,8 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 				<Modal id="jaime" open="" classProps='absolute '>
 					<main slot="main">
 						<div class="md:grid md:grid-cols-5">
-							<div class=" col-span-2 bg-[#384753] h-full  mr-4">
-								<Image src={Images.slider2} class="h-[636px] rounded-t-lg w-full  object-cover astro-a" alt="" />
+							<div class=" col-span-2 bg-[#384753] h-full  md:mr-4">
+								<Image src={Images.slider2} class="h-[350px] md:h-[636px] rounded-t-lg w-full  object-cover astro-a" alt="" />
 							</div>
 							<div class="col-span-3 pt-10 pb-10">
 								<div class="m max-h-[550px] overflow-auto list_container">
@@ -606,7 +615,7 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						</div>
 					</main>
 					<button slot="close" class="absolute top-1 right-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
@@ -614,8 +623,8 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 				<Modal id="william" open="" classProps='absolute '>
 					<main slot="main">
 						<div class="md:grid md:grid-cols-5">
-							<div class=" col-span-2 bg-[#384753] h-full  mr-4">
-								<Image src={Images.slider3} class="h-[636px]  w-full object-cover astro-a" alt="" />
+							<div class=" col-span-2 bg-[#384753] h-full  md:mr-4">
+								<Image src={Images.slider3} class="h-[350px] md:h-[636px]  w-full object-cover astro-a" alt="" />
 							</div>
 							<div class="col-span-3 pt-10 pb-10">
 								<div class="m max-h-[550px] overflow-auto list_container">
@@ -650,7 +659,7 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						</div>
 					</main>
 					<button slot="close" class="absolute top-1 right-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
@@ -658,43 +667,43 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 				<div class="swiper mt-10">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide" onclick="window.yanci.showModal()">
-							<Image src={Images.slider1} class="h-[636px] rounded-t-lg w-full object-cover astro-a" alt="" />
+							<Image src={Images.slider1} class="h-[636px] rounded-t-lg rounded-b-lg w-full object-cover astro-a" alt="" />
 							
 							<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
 								<div class="mt-auto px-10 pb-20">
-									<div class="text-2xl uppercase text-center  font-normal text-white">
+									<div class="text-[27px uppercase text-center  font-medium text-white">
 										Yanci Y. Santos.
 									</div>
-									<div class="text-2xl uppercase text-center  font-normal text-white">
+									<div class="text-[27px uppercase text-center  font-medium text-white">
 										Honduras · Edad: 17
 									</div>
 								</div>	
 							</div>
 						</div>
 						<div class="swiper-slide"  onclick="window.jaime.showModal()">
-							<Image src={Images.slider2} class="h-[636px] rounded-t-lg w-full  object-cover astro-a" alt="" />
+							<Image src={Images.slider2} class="h-[636px] rounded-t-lg rounded-b-lg w-full  object-cover astro-a" alt="" />
 							<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
 								<div class="mt-auto px-10 pb-20">
-									<div class="text-2xl uppercase text-center  font-normal text-white">
+									<div class=" uppercase text-center  font-medium text-white">
 										JAIME DONARI PINEDA ARITA.
 
 									</div>
-									<div class="text-2xl uppercase text-center  font-normal text-white">
+									<div class=" uppercase text-center  font-medium text-white">
 										Honduras · Edad: 27
 									</div>
 								</div>	
 							</div>
 						</div>
 						<div class="swiper-slide"  onclick="window.william.showModal()">
-							<Image src={Images.slider3} class="h-[636px] rounded-t-lg w-full  object-cover astro-a" alt="" />
+							<Image src={Images.slider3} class="h-[636px] rounded-t-lg rounded-b-lg w-full  object-cover astro-a" alt="" />
 							<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
 								<div class="mt-auto px-10 pb-20">
-									<div class="text-2xl uppercase text-center  font-normal text-white">
+									<div class=" uppercase text-center  font-medium text-white">
 										WILLIAM YOSIMAR MOREIRA PLEITEZ 
 
 
 									</div>
-									<div class="text-2xl uppercase text-center  font-normal text-white">
+									<div class=" uppercase text-center  font-medium text-white">
 										Honduras · Edad: 16
 									</div>
 								</div>	
@@ -710,8 +719,8 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 		</section>
 
 		<div class="bg-[#F2F4F4]">
-			<div class="text-2xl uppercase text-center py-20   font-semibold text-[#384753]">
-				TU PREFERENCIA APORTA A UN MODELO <br>
+			<div class="text-[22px] md:text-[27px] uppercase text-center py-20   font-medium text-[#384753]">
+				TU PREFERENCIA APORTA A UN MODELO <br class="md:block hidden">
 				360° DE CONSUMO RESPONSABLE.
 			</div>
 		</div>
