@@ -13,6 +13,9 @@ export default {
 					'2xl': '6rem',
 				},
 			},
+			screens: {
+				'lgx': '1100px',
+			}
 		},
 	},
 	plugins: [],
