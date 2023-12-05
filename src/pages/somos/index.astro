@@ -9,8 +9,8 @@ import blackdrop from '../../assets/black_drop2.mp4';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<div class="relative h-screen">
-			<Image src={Images.somosheader} class="w-full h-full astro-a object-cover md:object-none" alt="Astro logo" />
+		<div class="relative h-screen" style={`background-image: url(${Images.somosheader.src});background-position: center;background-repeat: no-repeat;background-size: cover;margin-top: -7px;`}>
+			<!--<Image src={Images.somosheader} class="w-full h-full astro-a object-cover md:object-none" alt="Astro logo" /> -->
 			<div class="white-to-black-transparent"></div>
 			<div class="absolute top-0 flex justify-center w-full md:pt-12">
 				<header class="site-header hidden md:block">
@@ -83,7 +83,7 @@ import blackdrop from '../../assets/black_drop2.mp4';
 		</div>
 		<section class="py-20 bg-white">
 			<div class="container md:px-10 px-7">
-				<div class="grid md:grid-cols-12 mb-[-342px ]">
+				<div class="grid md:grid-cols-1 lg:grid-cols-12 mb-[-342px ]">
 					<div class="col-span-6 md:col-span-5">
 						<div class="text-[#384753] text-2xl  font-medium uppercase">
 							Nuestra hitoria
@@ -127,8 +127,59 @@ import blackdrop from '../../assets/black_drop2.mp4';
 					</video>
 				</div>
 			</div>
-			<div class="flex justify-center md:mb-0 mb-10 z-50">
-				<div class="flex flex-col items-start md:px-60 lg:px-40 px-10">
+			<div class="flex justify-center md:mb-0 mb-10 z-50 relative">
+				<div class="md:flex hidden flex-col items-start md:px-20 lg:px-30  px-10">
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-full z-10" width="1116.491" height="235.112" viewBox="0 0 1116.491 235.112">
+						<g id="Grupo_14" data-name="Grupo 14" transform="translate(-380.233 -1983.409)">
+						  <g id="Grupo_7" data-name="Grupo 7">
+							<path id="Trazado_1" data-name="Trazado 1" d="M381.729,2040.8v-55.687h23.014v54.835c0,18.893,8.239,26.707,22.161,26.707,14.064,0,22.161-7.814,22.161-26.707v-54.835H471.8V2040.8c0,29.264-16.763,45.459-45.033,45.459S381.729,2070.065,381.729,2040.8Z" fill="#fff"/>
+							<path id="Trazado_2" data-name="Trazado 2" d="M584.3,1985.114v99.441H565.409l-49.578-60.375v60.375H493.1v-99.441h19.036l49.437,60.375v-60.375Z" fill="#fff"/>
+							<path id="Trazado_3" data-name="Trazado 3" d="M606.462,1985.114h23.014v99.441H606.462Z" fill="#fff"/>
+							<path id="Trazado_4" data-name="Trazado 4" d="M759.174,2095.209c-6.535,7.955-15.911,12.217-26.849,12.217-14.775,0-25.145-5.4-40.487-21.593-27.275-3.409-46.454-24.007-46.454-51,0-29.549,23.014-51.425,54.409-51.425,31.253,0,54.409,21.735,54.409,51.425,0,23.3-14.348,41.766-35.515,48.584,4.83,5.115,9.092,6.961,14.064,6.961,6.109,0,11.507-2.415,16.2-7.386Zm-59.381-28.553c17.757,0,31.111-12.928,31.111-31.822s-13.354-31.821-31.111-31.821-31.111,12.928-31.111,31.821S682.036,2066.656,699.793,2066.656Z" fill="#fff"/>
+							<path id="Trazado_5" data-name="Trazado 5" d="M769.257,2040.8v-55.687h23.014v54.835c0,18.893,8.239,26.707,22.161,26.707,14.065,0,22.161-7.814,22.161-26.707v-54.835h22.73V2040.8c0,29.264-16.763,45.459-45.033,45.459S769.257,2070.065,769.257,2040.8Z" fill="#fff"/>
+							<path id="Trazado_6" data-name="Trazado 6" d="M957.625,2066.087v18.468h-77v-99.441h75.15v18.467H903.5v21.593h46.17v17.9H903.5v23.013Z" fill="#fff"/>
+							<path id="Trazado_7" data-name="Trazado 7" d="M1005.495,2074.753l7.813-17.332c8.382,6.11,20.883,10.371,32.815,10.371,13.638,0,19.178-4.546,19.178-10.654,0-18.61-57.817-5.825-57.817-42.761,0-16.9,13.638-30.968,41.907-30.968,12.5,0,25.286,2.983,34.521,8.807l-7.1,17.474c-9.233-5.256-18.751-7.814-27.559-7.814-13.638,0-18.894,5.115-18.894,11.366,0,18.325,57.818,5.681,57.818,42.191,0,16.621-13.78,30.827-42.191,30.827C1030.213,2086.26,1014.3,2081.572,1005.495,2074.753Z" fill="#fff"/>
+							<path id="Trazado_8" data-name="Trazado 8" d="M1123.116,2003.866h-31.822v-18.752h86.657v18.752h-31.822v80.689h-23.013Z" fill="#fff"/>
+							<path id="Trazado_9" data-name="Trazado 9" d="M1182.637,2034.834c0-29.549,23.014-51.425,54.409-51.425,31.253,0,54.409,21.735,54.409,51.425s-23.156,51.426-54.409,51.426C1205.651,2086.26,1182.637,2064.382,1182.637,2034.834Zm85.52,0c0-18.893-13.354-31.821-31.111-31.821s-31.111,12.928-31.111,31.821,13.354,31.822,31.111,31.822S1268.157,2053.728,1268.157,2034.834Z" fill="#fff"/>
+							<path id="Trazado_10" data-name="Trazado 10" d="M1370.721,2084.555l-19.178-27.7h-21.167v27.7h-23.013v-99.441h43.044c26.565,0,43.185,13.779,43.185,36.083,0,14.916-7.528,25.854-20.456,31.4l22.3,31.963Zm-21.593-80.689h-18.752v34.662h18.752c14.064,0,21.167-6.534,21.167-17.331C1370.3,2010.258,1363.192,2003.866,1349.128,2003.866Z" fill="#fff"/>
+							<path id="Trazado_11" data-name="Trazado 11" d="M1458.083,2049.325v35.23H1435.07V2049.04l-38.5-63.926h24.434l26.566,44.18,26.564-44.18h22.588Z" fill="#fff"/>
+						  </g>
+						  <g id="Grupo_8" data-name="Grupo 8">
+							<path id="Trazado_12" data-name="Trazado 12" d="M380.233,2150.748h17.038c12.639,0,21.269,7.795,21.269,19.489s-8.63,19.487-21.269,19.487H380.233Zm16.7,32.851c8.687,0,14.31-5.289,14.31-13.362s-5.623-13.364-14.31-13.364h-9.465V2183.6Z" fill="#fff"/>
+							<path id="Trazado_13" data-name="Trazado 13" d="M434.569,2150.748h7.239v38.976h-7.239Z" fill="#fff"/>
+							<path id="Trazado_14" data-name="Trazado 14" d="M467.917,2156.818v11.859h18.82v6.125h-18.82v14.922h-7.238v-38.976h28.452v6.07Z" fill="#fff"/>
+							<path id="Trazado_15" data-name="Trazado 15" d="M511.732,2156.818v11.859h18.82v6.125h-18.82v14.922h-7.238v-38.976h28.452v6.07Z" fill="#fff"/>
+							<path id="Trazado_16" data-name="Trazado 16" d="M577.54,2183.655v6.069H548.308v-38.976H576.76v6.07H555.546v10.134h18.82v5.957h-18.82v10.746Z" fill="#fff"/>
+							<path id="Trazado_17" data-name="Trazado 17" d="M619.461,2189.724,611.5,2178.31a13.48,13.48,0,0,1-1.5.056h-8.8v11.358H593.96v-38.976H610c10.245,0,16.592,5.235,16.592,13.865a12.457,12.457,0,0,1-8.3,12.3l8.965,12.807Zm-9.8-32.851H601.2v15.535h8.464c6.347,0,9.632-2.9,9.632-7.795S616.009,2156.873,609.662,2156.873Z" fill="#fff"/>
+							<path id="Trazado_18" data-name="Trazado 18" d="M672.24,2183.655v6.069H643.007v-38.976h28.452v6.07H650.246v10.134h18.82v5.957h-18.82v10.746Z" fill="#fff"/>
+							<path id="Trazado_19" data-name="Trazado 19" d="M723.291,2150.748v38.976h-5.957l-21.493-26.392v26.392h-7.182v-38.976h5.958l21.492,26.392v-26.392Z" fill="#fff"/>
+							<path id="Trazado_20" data-name="Trazado 20" d="M750.012,2156.873H737.094v-6.125h33.073v6.125H757.25v32.851h-7.238Z" fill="#fff"/>
+						  </g>
+						  <g id="Grupo_9" data-name="Grupo 9">
+							<path id="Trazado_21" data-name="Trazado 21" d="M806.239,2163.681c0-29.975,23.013-51.426,53.982-51.426,17.19,0,31.537,6.251,40.913,17.615l-14.773,13.638c-6.677-7.671-15.059-11.648-25-11.648-18.61,0-31.821,13.069-31.821,31.821s13.211,31.821,31.821,31.821c9.944,0,18.326-3.977,25-11.791l14.773,13.638c-9.376,11.507-23.723,17.758-41.054,17.758C829.252,2215.107,806.239,2193.656,806.239,2163.681Z" fill="#fff"/>
+							<path id="Trazado_22" data-name="Trazado 22" d="M908.944,2163.681c0-29.549,23.013-51.426,54.409-51.426,31.253,0,54.408,21.736,54.408,51.426s-23.155,51.426-54.408,51.426C931.957,2215.107,908.944,2193.229,908.944,2163.681Zm85.519,0c0-18.894-13.353-31.821-31.11-31.821s-31.111,12.927-31.111,31.821,13.353,31.821,31.111,31.821S994.463,2182.575,994.463,2163.681Z" fill="#fff"/>
+							<path id="Trazado_23" data-name="Trazado 23" d="M1056.683,2132.428v26.281h46.027v18.467h-46.027V2213.4h-23.014V2113.96h75.15v18.468Z" fill="#fff"/>
+							<path id="Trazado_24" data-name="Trazado 24" d="M1146.037,2132.428v26.281h46.027v18.467h-46.027V2213.4h-23.014V2113.96h75.149v18.468Z" fill="#fff"/>
+							<path id="Trazado_25" data-name="Trazado 25" d="M1289.372,2194.934V2213.4h-77V2113.96h75.15v18.468h-52.278v21.593h46.169v17.9h-46.169v23.014Z" fill="#fff"/>
+							<path id="Trazado_26" data-name="Trazado 26" d="M1383.27,2194.934V2213.4h-77V2113.96h75.149v18.468h-52.278v21.593h46.17v17.9h-46.17v23.014Z" fill="#fff"/>
+							<path id="Trazado_27" data-name="Trazado 27" d="M1392.359,2203.6l7.813-17.332c8.382,6.109,20.883,10.371,32.816,10.371,13.637,0,19.177-4.546,19.177-10.654,0-18.611-57.817-5.825-57.817-42.761,0-16.9,13.638-30.969,41.907-30.969,12.5,0,25.286,2.984,34.521,8.808l-7.1,17.473c-9.233-5.255-18.751-7.813-27.559-7.813-13.637,0-18.894,5.114-18.894,11.365,0,18.325,57.819,5.682,57.819,42.192,0,16.621-13.781,30.827-42.192,30.827C1417.078,2215.107,1401.166,2210.418,1392.359,2203.6Z" fill="#fff"/>
+						  </g>
+						  <g id="Grupo_10" data-name="Grupo 10">
+							<rect id="Rectángulo_7" data-name="Rectángulo 7" width="386.881" height="2" transform="translate(381.728 2122.329)" fill="#fff"/>
+						  </g>
+						  <g id="Grupo_11" data-name="Grupo 11">
+							<rect id="Rectángulo_8" data-name="Rectángulo 8" width="386.881" height="2" transform="translate(381.728 2216.521)" fill="#fff"/>
+						  </g>
+						  <g id="Grupo_13" data-name="Grupo 13">
+							<g id="Grupo_12" data-name="Grupo 12">
+							  <path id="Trazado_28" data-name="Trazado 28" d="M963.778,2137.574c-4.607,10.116-9.051,19.2-12.878,28.531-2.216,5.4.611,12.019,5.607,15.388a13.614,13.614,0,0,0,15.719-.7c4.655-3.588,6.789-9.976,4.442-15.4-3.907-9.026-8.248-17.865-12.89-27.824m3.452,36.821a9.06,9.06,0,0,1-6.888-.075c-2.649-1.262-3.036-4.17-1.778-6.951,1.581-3.49,3.234-6.951,5.211-11.187,2.018,4.311,3.682,7.77,5.26,11.27,1.252,2.779.844,5.707-1.8,6.943" fill="#fff"/>
+							</g>
+						  </g>
+						</g>
+					</svg>
+					  
+				</div>
+				<div class="md:hidden flex  flex-col items-start md:px-60 lg:px-40 px-10">
 					<div class="text-white md:mb-5 mb-0 md: lgx:text-[5rem] lg:text-[7rem] z-10 text-[1.5rem] font-bold text-center  leading-3" style="line-height: 1.1;">
 						UNIQUE STORY
 					</div>
@@ -158,41 +209,43 @@ import blackdrop from '../../assets/black_drop2.mp4';
 						</span>
 					</div>
 				</div>
-			</div>
-			
-			<div class="md:px-0 px-10 flex justify-center md:bottom-[-305px] transform left-2/4 -translate-x-2/4  absolute z-10 w-full">
-				<div class="bg-[#F1F4F4] text-[13px] w-full md:pb-20 pb-[5rem] md:px-24 md:py-20 px-5 py-5 text-center md:max-w-[750px]  justify  rounded-t-[22px] rounded-b-[22px] blackdrop-card-somos ">
-					Es común hablar de los productores, de sus historias y el
-					esfuerzo que hay en una cadena cargada de valor por obtener
-					
-					un producto distinto.<br><br>
-					
-					Sobre el 90% del café en el mundo se produce por pequeños
-					productores, que poseen menos de una hectárea de cultivo,
-					tierra con historia, cultura y hoy en dia de innovación también,
-					producto de nuevas propuestas de cafés. Todo esto se traduce
-					
-					en recetas únicas.<br><br>
-					
-					Aquí es donde todo comienza en Blackdrop y lo que nos une
-					como grupo humano y empresa, que es transformar historias
-					únicas en cafés diferentes. El café es una carrera de postas
-					todos dependemos del que viene detrás, nuestro compromiso
-					resaltar lo mejor de cada grano cerrando un ciclo con una
-					
-					experiencia sensorial única.
-					<div class="absolute left-2/4 tranform -translate-x-2/4 -bottom-14">
-						<svg xmlns="http://www.w3.org/2000/svg" width="108.94" height="108.94" viewBox="0 0 108.94 108.94">
-							<g id="Grupo_17" data-name="Grupo 17" transform="translate(-905.53 -2815.847)">
-							<path id="Trazado_44" data-name="Trazado 44" d="M959.916,2815.847a54.5,54.5,0,0,0-54.386,54.3c.044,30.159,24.411,54.654,54.351,54.637a54.47,54.47,0,1,0,.035-108.94m-.327,104.028c-27.184-.12-49.287-22.625-49.128-50.019a49.579,49.579,0,1,1,49.128,50.019" fill="#384753"/>
-							<path id="Trazado_45" data-name="Trazado 45" d="M960.289,2877.2c-2.875,6.311-5.648,11.977-8.035,17.8-1.383,3.37.381,7.5,3.5,9.6a8.493,8.493,0,0,0,9.808-.434,8.226,8.226,0,0,0,2.771-9.608c-2.437-5.631-5.146-11.146-8.042-17.36m2.154,22.974a5.653,5.653,0,0,1-4.3-.047c-1.653-.787-1.894-2.6-1.109-4.337.986-2.178,2.017-4.337,3.251-6.98,1.259,2.69,2.3,4.848,3.282,7.032.781,1.734.526,3.561-1.126,4.332" fill="#384753"/>
-							<path id="Trazado_46" data-name="Trazado 46" d="M970.467,2843.946l-3.977-2.829-6.819,9.226c-1.24-1.74-2.29-3.213-3.341-4.686s-2.1-2.942-3.265-4.572c-1.358.966-2.552,1.818-3.984,2.838,3.575,5.055,6.957,9.836,10.553,14.918,3.714-5.108,7.205-9.906,10.833-14.9" fill="#384753"/>
-							<path id="Trazado_47" data-name="Trazado 47" d="M988.859,2842.7l-3.782-3.232L959.9,2868.935l-25.182-29.467-3.782,3.232,24.012,28.1h-25.8v4.548h61.712V2870.8H964.846Z" fill="#384753"/>
-							</g>
-						</svg>
+
+				<div class="md:px-0 px-10 flex justify-center bottom-[-475px] md:bottom-[-475px] transform left-2/4 -translate-x-2/4  absolute z-10 w-full">
+					<div class="bg-[#F1F4F4] text-[13px] w-full md:pb-20 pb-[5rem] md:px-24 md:py-20 px-5 py-5 text-center md:max-w-[750px]  justify  rounded-t-[22px] rounded-b-[22px] blackdrop-card-somos ">
+						Es común hablar de los productores, de sus historias y el
+						esfuerzo que hay en una cadena cargada de valor por obtener
+						
+						un producto distinto.<br><br>
+						
+						Sobre el 90% del café en el mundo se produce por pequeños
+						productores, que poseen menos de una hectárea de cultivo,
+						tierra con historia, cultura y hoy en dia de innovación también,
+						producto de nuevas propuestas de cafés. Todo esto se traduce
+						
+						en recetas únicas.<br><br>
+						
+						Aquí es donde todo comienza en Blackdrop y lo que nos une
+						como grupo humano y empresa, que es transformar historias
+						únicas en cafés diferentes. El café es una carrera de postas
+						todos dependemos del que viene detrás, nuestro compromiso
+						resaltar lo mejor de cada grano cerrando un ciclo con una
+						
+						experiencia sensorial única.
+						<div class="absolute left-2/4 tranform -translate-x-2/4 -bottom-14">
+							<svg xmlns="http://www.w3.org/2000/svg" width="108.94" height="108.94" viewBox="0 0 108.94 108.94">
+								<g id="Grupo_17" data-name="Grupo 17" transform="translate(-905.53 -2815.847)">
+								<path id="Trazado_44" data-name="Trazado 44" d="M959.916,2815.847a54.5,54.5,0,0,0-54.386,54.3c.044,30.159,24.411,54.654,54.351,54.637a54.47,54.47,0,1,0,.035-108.94m-.327,104.028c-27.184-.12-49.287-22.625-49.128-50.019a49.579,49.579,0,1,1,49.128,50.019" fill="#384753"/>
+								<path id="Trazado_45" data-name="Trazado 45" d="M960.289,2877.2c-2.875,6.311-5.648,11.977-8.035,17.8-1.383,3.37.381,7.5,3.5,9.6a8.493,8.493,0,0,0,9.808-.434,8.226,8.226,0,0,0,2.771-9.608c-2.437-5.631-5.146-11.146-8.042-17.36m2.154,22.974a5.653,5.653,0,0,1-4.3-.047c-1.653-.787-1.894-2.6-1.109-4.337.986-2.178,2.017-4.337,3.251-6.98,1.259,2.69,2.3,4.848,3.282,7.032.781,1.734.526,3.561-1.126,4.332" fill="#384753"/>
+								<path id="Trazado_46" data-name="Trazado 46" d="M970.467,2843.946l-3.977-2.829-6.819,9.226c-1.24-1.74-2.29-3.213-3.341-4.686s-2.1-2.942-3.265-4.572c-1.358.966-2.552,1.818-3.984,2.838,3.575,5.055,6.957,9.836,10.553,14.918,3.714-5.108,7.205-9.906,10.833-14.9" fill="#384753"/>
+								<path id="Trazado_47" data-name="Trazado 47" d="M988.859,2842.7l-3.782-3.232L959.9,2868.935l-25.182-29.467-3.782,3.232,24.012,28.1h-25.8v4.548h61.712V2870.8H964.846Z" fill="#384753"/>
+								</g>
+							</svg>
+						</div>
 					</div>
 				</div>
 			</div>
+			
+			
 		
 			
 
@@ -205,7 +258,7 @@ import blackdrop from '../../assets/black_drop2.mp4';
 				</div>
 			</div>
 			<div class="container pt-16">
-				<div class="grid md:grid-cols-4 gap-10">
+				<div class="grid md:grid-cols-1 lg:grid-cols-4 gap-10">
 					<div class="">
 						<div class="h-[166px] rounded-lg">
 							<Image src={Images.finca} class="rounded-lg w-full h-full object-cover astro-a" alt="" />

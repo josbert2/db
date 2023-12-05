@@ -9,12 +9,22 @@ import Header from '../../components/Header.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<style>
+			@media  (min-width: 768px) {
+				.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+					bottom: 205px !important;
+				}
+			}
+		</style>
 		<div class="relative h-screen">
 			<Image src={Images.compromomiso_ambiental} class="w-full h-full astro-a object-cover " alt="Astro logo" />
 			<Header />
 			<div class=" absolute flex-col flex  bottom-0 transform rounded-t-lg rounded-b-lg  left-0 w-full ">
 				<div class="container mx-auto">
 					<div class="blackdrop_header rounded-t-lg pb-40 py-5  text-white font-bold text-4xl  text-left  ">
+						<h3 class="uppercase 
+									md:text-[2.313rem] lgx:text-[2.5rem] lg:text-[2.563rem] xl:text-[3.50rem]
+									md:leading-[3.688rem]  lgx:leading-[4rem]">COMPROMISO <br class="md:block hidden"> AMBIENTAL</h3>
 						
 						<p class="text-[13px] font-normal mt-4 text-shad leading-[22px]">Creemos que la calidad no solo se mide en <br> la taza final , sino en cada acción que nos permite llegar a ella siendo consecuentes <br> con nuestro propósito y con la huella que vamos dejando, <br> poniendo siempre por delante nuestro compromiso con el <br> medioambiente. 
 						</p>
@@ -24,9 +34,9 @@ import Header from '../../components/Header.astro';
 			</div>
 		</div>
 
-		<section class="bg-white py-20 relative">
+		<section class="bg-white mD:pt-0 md:pb-20 py-20 relative">
 			<div class="container">
-				<div class="grid md:grid-cols-3 gap-10">
+				<div class="grid md:grid-cols-1 lg:grid-cols-3 gap-10">
 					<div class="bg-[#F1F4F4] flex-col flex  rounded-b-lg">
 						<div class="h-[166px]">
 							<Image src={Images.integral} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
@@ -93,43 +103,46 @@ import Header from '../../components/Header.astro';
 				<div class="text-[27px] uppercase text-center pt-40  font-medium text-[#384753]">
 					CONOCE EN DETALLE NUESTROS FORMATOS
 				</div>
-				<div class="swiper mt-10">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide" >
-							<div class="text-[23px]  text-center   font-medium text-[#384753]">
-								Cápsulas de Aluminio
+				<div class="md:px-20  lg:px-40">
+					<div class="swiper mt-10">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" >
+								<div class="text-[23px]  text-center   font-medium text-[#384753]">
+									Cápsulas de Aluminio
+								</div>
+								<Image src={Images.slidercompromiso1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain astro-a" alt="" />
 							</div>
-							<Image src={Images.slidercompromiso1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain astro-a" alt="" />
-						</div>
-						<div class="swiper-slide" >
-							<div class="text-[23px]  text-center   font-medium text-[#384753]">
-								Grano / Molido
+							<div class="swiper-slide" >
+								<div class="text-[23px]  text-center   font-medium text-[#384753]">
+									Grano / Molido
+								</div>
+								<Image src={Images.grano1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a" alt="" />
 							</div>
-							<Image src={Images.grano1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a" alt="" />
-						</div>
-						<div class="swiper-slide" >
-							<div class="text-[23px]  text-center   font-medium text-[#384753]">
-								Cápsulas Compostables
+							<div class="swiper-slide" >
+								<div class="text-[23px]  text-center   font-medium text-[#384753]">
+									Cápsulas Compostables
+								</div>
+								<Image src={Images.slidercompromiso3} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a" alt="" />
 							</div>
-							<Image src={Images.slidercompromiso3} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a" alt="" />
-						</div>
-						<div class="swiper-slide" >
-							<div class="text-[23px]  text-center   font-medium text-[#384753]">
-								Cápsulas de Aluminio
+							<div class="swiper-slide" >
+								<div class="text-[23px]  text-center   font-medium text-[#384753]">
+									Cápsulas de Aluminio
+								</div>
+								<Image src={Images.slidercompromiso4} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a" alt="" />
 							</div>
-							<Image src={Images.slidercompromiso4} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a" alt="" />
+							
 						</div>
-						
-					</div>
-				
+					
 
+					</div>
+					<div class="swiper-pagination"></div>
 				</div>
-				<div class="swiper-pagination"></div>
 			</div>
 		</section>
 		<section class="bg-white py-20 relative">
 			<div class="container">
-				<div class="grid md:grid-cols-2 gap-10">
+				<!--
+				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
 					<div class="bg-[#F1F4F4] flex-col flex">
 						<div class="h-[166px]">
 							<Image src={Images.compost} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
@@ -163,8 +176,8 @@ import Header from '../../components/Header.astro';
 						</div>
 					</div>
 					
-				</div>
-				<div class="grid  md:grid-cols-2 gap-10 pt-10">
+				</div>-->
+				<div class="grid  md:grid-cols-1 lg:grid-cols-2 gap-10 pt-10">
 					<div class="">
 						<Image src={Images.compostindustrial} class=" w-full h-full object-cover astro-a" alt="" />
 					</div>
@@ -184,7 +197,7 @@ import Header from '../../components/Header.astro';
 		</section>
 		<section class="bg-[#384753] py-20 pb-60 pt-20 md:pt-40 relative">
 			<div class="container">
-				<div class="grid md:grid-cols-2 gap-10">
+				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
 					<div class="">
 						<div class="border-b border-white pb-7">
 							<h2 class=" text-[35px] md:text-[42px] font-bold text-white">PLAN DE ACCIÓN</h2>
@@ -214,7 +227,7 @@ import Header from '../../components/Header.astro';
 						¿CÓMO LO HAREMOS?
 					</div>
 					<p  class="text-[14px] font-medium md:mb-10 px-5 md:px-10 text-left">
-						Cápsulas compostables : Serán compostadas y transformadas en abono para el medio ambiente. <br><br>
+						Cápsulas compostables : Junto a nuestros gestores partners seran compostadas industrialmente bajo las condiciones especificas para su correcta descomposicion. <br><br>
 
 						Cápsulas de aluminio : Serán trituradas, el café será compostado ya que es materia orgánica y el aluminio será reciclado transformándose en nuevos productos de aluminio, pudiendo ser reciclado infinitas veces.
 
@@ -225,7 +238,7 @@ import Header from '../../components/Header.astro';
 		</section>
 		<section class="bg-white py-20 relative">
 			<div class="container pt-[16rem] md:pt-[25rem]">
-				<div class="grid md:grid-cols-2 gap-10">
+				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
 					<div class="">
 						<Image src={Images.programa} class=" w-full h-full object-cover astro-a" alt="" />
 					</div>
@@ -306,7 +319,7 @@ import Header from '../../components/Header.astro';
 				<div class="text-[27px] uppercase text-center pt-20 font-medium text-[#384753]">
 					CICLO DE VIDA DE NUESTROS PRODUCTOS
 				</div>
-				<div class="pt-16">
+				<div class="pt-16 lg:p-20 md:p-10">
 					<Image src={Images.disfruta} class=" w-full  object-contain astro-a" alt="" />
 				</div>
 			</div>
