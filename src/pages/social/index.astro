@@ -470,8 +470,8 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 					<div class="text-[27px] uppercase pt-20 text-center tracking-wider  font-medium text-[#F2F4F4]">
 						OBJETIVOS MEDIBLES <br> Y CUANTIFICABLES.
 					</div>
-					<div class="pt-20 pb-40">
-						<div class="grid md:grid-cols-3">
+					<div class="pt-20 pb-5 md:pb-10">
+						<div class="md:grid md:grid-cols-3">
 							<div class="col-span-2 md:pr-10 md:p-24">
 								<Image src={Images.mapa} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
 							</div>
@@ -515,13 +515,14 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 					CASOS REALES
 					
 				</div>
-				<Modal id="yanci" open="" classProps='absolute '>
+				<Modal id="yanci" open="" modal={true} classProps='absolute '>
 					<main slot="main">
 						<div class="md:grid md:grid-cols-5">
 							<div class=" col-span-2 bg-[#384753] h-full  md:mr-4">
 								<Image src={Images.slider1} class="h-[350px] md:h-[636px]  w-full object-cover astro-a" alt="" />
 							</div>
 							<div class="col-span-3 pt-10 pb-10">
+								
 								<div class="m max-h-[550px] overflow-auto list_container">
 									<div class="header text-2xl py-5 pt-0 text-left px-8  font-semibold text-[#384753]">
 										YANCI YORLENY SANTOS. 
@@ -622,13 +623,15 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						</svg>
 					</button>
 				</Modal>
-				<Modal id="william" open="" classProps='absolute '>
+				<Modal id="william" open="CONOCE MÁS" modal={true} classProps='absolute '>
+					
 					<main slot="main">
 						<div class="md:grid md:grid-cols-5">
 							<div class=" col-span-2 bg-[#384753] h-full  md:mr-4">
 								<Image src={Images.slider3} class="h-[350px] md:h-[636px]  w-full object-cover astro-a" alt="" />
 							</div>
 							<div class="col-span-3 pt-10 pb-10">
+								
 								<div class="m max-h-[550px] overflow-auto list_container">
 									<div class="header text-2xl py-5 pt-0 text-left px-8  font-semibold text-[#384753]">
 										YANCI YORLENY SANTOS. 
@@ -659,6 +662,7 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 							</div>
 
 						</div>
+						
 					</main>
 					<button slot="close" class="absolute top-1 right-3">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
@@ -670,6 +674,11 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 					<div class="swiper  ">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide" onclick="window.yanci.showModal()">
+								<div class='absolute bottom-10 button-modal left-2/4 transform -translate-x-2/4'>
+									<button class='border-[#fff] bg-white  border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white font-medium text-[#384753] transition-all'> 
+										CONOCE MÁS
+									</button>
+								</div>
 								<Image src={Images.slider1} class="h-[510px] rounded-t-lg rounded-b-lg w-full object-cover astro-a" alt="" />
 								
 								<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
@@ -684,6 +693,11 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 								</div>
 							</div>
 							<div class="swiper-slide"  onclick="window.jaime.showModal()">
+								<div class='absolute bottom-10 button-modal left-2/4 transform -translate-x-2/4'>
+									<button class='border-[#fff] bg-white  border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white font-medium text-[#384753] transition-all'> 
+										CONOCE MÁS
+									</button>
+								</div>
 								<Image src={Images.slider2} class="h-[510px] rounded-t-lg rounded-b-lg w-full  object-cover astro-a" alt="" />
 								<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
 									<div class="mt-auto px-10 pb-20">
@@ -698,6 +712,11 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 								</div>
 							</div>
 							<div class="swiper-slide"  onclick="window.william.showModal()">
+								<div class='absolute bottom-10 button-modal left-2/4 transform -translate-x-2/4'>
+									<button class='border-[#fff] bg-white  border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white font-medium text-[#384753] transition-all'> 
+										CONOCE MÁS
+									</button>
+								</div>
 								<Image src={Images.slider3} class="h-[510px] rounded-t-lg rounded-b-lg w-full  object-cover astro-a" alt="" />
 								<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
 									<div class="mt-auto px-10 pb-20">
