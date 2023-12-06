@@ -66,3 +66,5 @@ export { default as ma2 } from './ma2.png';
 export { default as ma3 } from './ma3.png';
 export { default as ma4 } from './ma4.png';
 export { default as ma5 } from './ma5.png';
+
+export { default as d1 } from './1d.png';

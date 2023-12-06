@@ -1,5 +1,6 @@
 ---
-
+import { Image } from 'astro:assets';
+import * as Images from '../../assets/index.js';
 ---
 <style>
 
@@ -13,12 +14,22 @@
 
 
 
+
         
     </style>
-<div class="">
+<div class="relative">
 
     
     <svg xmlns="http://www.w3.org/2000/svg" class='w-full orbitsvg' width="1408.856" height="1170.261" viewBox="0 0 1408.856 1170.261">
+      <g id="Componente_1_1" data-name="Componente 1 – 1" transform="translate(244.252 204.793)">
+        <circle id="Elipse_11" data-name="Elipse 11" cx="89.325" cy="89.325" r="89.325" fill="#fff" stroke="#bdc9c8" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.307"/>
+        <g id="Grupo_38" data-name="Grupo 38" transform="translate(-511.728 -7424.763)">
+          <g id="Grupo_37" data-name="Grupo 37">
+            <path id="Trazado_62" data-name="Trazado 62" d="M562.417,7486.174H633.69l-8.8,45.771L610.324,7548H585.793l-14.576-16.058Z" fill="#fff" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
+            <line id="Línea_24" data-name="Línea 24" x1="97.564" transform="translate(549.271 7486.174)" fill="#fff" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
+          </g>
+        </g>
+      </g>
         <text id="_5.2_Mientras_que_el_aluminio_se_recicla_en_Chile_para_su_posterior_reutilización" data-name="5.2 Mientras que el aluminio
       se recicla en Chile para 
       su posterior reutilización" transform="translate(220.628 275.349)" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="-199.945" y="0">5.2 Mientras que el aluminio</tspan><tspan x="-165.422" y="19.2">se recicla en Chile para </tspan><tspan x="-173.445" y="38.4">su posterior reutilización</tspan></text>
@@ -42,6 +53,13 @@
         
         
           
+        <g id="Grupo_53" data-name="Grupo 53" transform="translate(-270.288 -7222.124)">
+          <path id="Trazado_70" data-name="Trazado 70" d="M1004.663,7349.577H950.768l-10-74.358h73.895Z" fill="#fff" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
+          <line id="Línea_28" data-name="Línea 28" x2="69.63" transform="translate(942.841 7291.511)" fill="none" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
+          <path id="Trazado_71" data-name="Trazado 71" d="M1013.668,7282.618h16.153l-8.076,49.674h-14.992" fill="none" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
+        </g>
+        
+        
           
         <g id="Grupo_38" data-name="Grupo 38" transform="translate(-267.476 -7219.97)">
           <g id="Grupo_37" data-name="Grupo 37">
@@ -92,11 +110,7 @@
           <path id="Rectángulo_34" data-name="Rectángulo 34" d="M49.521,0h6.013a0,0,0,0,1,0,0V6.013A49.521,49.521,0,0,1,6.013,55.534H0a0,0,0,0,1,0,0V49.521A49.521,49.521,0,0,1,49.521,0Z" transform="translate(633.289 7980.138) rotate(180)" fill="#fff" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.307"/>
           <line id="Línea_27" data-name="Línea 27" y2="83.877" transform="translate(577.429 7896.261)" fill="#fff" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.307"/>
         </g>
-        <g id="Grupo_53" data-name="Grupo 53" transform="translate(-267.476 -7219.97)">
-          <path id="Trazado_70" data-name="Trazado 70" d="M1004.663,7349.577H950.768l-10-74.358h73.895Z" fill="#fff" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
-          <line id="Línea_28" data-name="Línea 28" x2="69.63" transform="translate(942.841 7291.511)" fill="none" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
-          <path id="Trazado_71" data-name="Trazado 71" d="M1013.668,7282.618h16.153l-8.076,49.674h-14.992" fill="none" stroke="#607474" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.471"/>
-        </g>
+        
         <g id="Grupo_56" data-name="Grupo 56" transform="translate(-267.476 -7219.97)">
           <g id="Grupo_55" data-name="Grupo 55">
             <g id="Grupo_54" data-name="Grupo 54">
@@ -123,6 +137,8 @@
           </g>
         </g>
       </svg>
+
+    
       
       
 
@@ -132,71 +148,84 @@
       
           
     <script is:inline>
-        let currentElipseIndex = 0;
-        const elipseOrder = ['Elipse_15', 'Elipse_12', 'Elipse_13', 'Elipse_16', 'Elipse_14', 'Elipse_11'];
+        document.addEventListener("DOMContentLoaded", function() {
+      let currentElipseIndex = 0;
+      const elipseOrder = ['Elipse_15', 'Elipse_12', 'Elipse_13', 'Elipse_16', 'Elipse_14', 'Elipse_11'];
 
-        function animateElipse() {
-            // Ocultar la elipse anterior
-            if (currentElipseIndex > 0) {
-                const previousElipseId = elipseOrder[currentElipseIndex - 1];
-                const previousElipse = document.getElementById(previousElipseId);
-                previousElipse.classList.remove('visible');
-                previousElipse.style.transform = '';
-            } else if (currentElipseIndex === 0) {
-                const lastElipseId = elipseOrder[elipseOrder.length - 1];
-                const lastElipse = document.getElementById(lastElipseId);
-                lastElipse.classList.remove('visible');
-                lastElipse.style.transform = '';
-                lastElipse.style.transformOrigin = '';
-            }
+      function animateElipse() {
+          // Ocultar la elipse anterior
+          if (currentElipseIndex > 0) {
+              const previousElipseId = elipseOrder[currentElipseIndex - 1];
+              const previousElipse = document.getElementById(previousElipseId);
+              previousElipse.classList.remove('visible');
+              previousElipse.style.transform = '';
+          } else if (currentElipseIndex === 0) {
+              const lastElipseId = elipseOrder[elipseOrder.length - 1];
+              const lastElipse = document.getElementById(lastElipseId);
+              lastElipse.classList.remove('visible');
+              lastElipse.style.transform = '';
+              lastElipse.style.transformOrigin = '';
+          }
 
-            // Mostrar la elipse actual con transformación
-            const currentElipseId = elipseOrder[currentElipseIndex];
-            const currentElipse = document.getElementById(currentElipseId);
-            currentElipse.classList.add('visible');
-            applyTransform(currentElipseId, currentElipse);
+          // Mostrar la elipse actual con transformación
+          const currentElipseId = elipseOrder[currentElipseIndex];
+          const currentElipse = document.getElementById(currentElipseId);
+          currentElipse.classList.add('visible');
+          applyTransform(currentElipseId, currentElipse);
 
-            // Avanzar al siguiente índice o volver al inicio
-            currentElipseIndex = (currentElipseIndex + 1) % elipseOrder.length;
-        }
+          // Avanzar al siguiente índice o volver al inicio
+          currentElipseIndex = (currentElipseIndex + 1) % elipseOrder.length;
+      }
 
-        function applyTransform(elipseId, elipse) {
-            switch (elipseId) {
-                case 'Elipse_15':
-                    elipse.style.transformOrigin = '80px 97px';
-                    elipse.style.transform = 'translate(620.855px, 2.154px) scale(1.5)';
-                    
+      function applyTransform(elipseId, elipse) {
+          switch (elipseId) {
+              case 'Elipse_15':
+                  elipse.style.transformOrigin = '80px 97px';
+                  elipse.style.transform = 'translate(620.855px, 2.154px) scale(1.5)';
+                  break;
+              case 'Elipse_12':
+                  elipse.style.transformOrigin = '80px 97px';
+                  elipse.style.transform = 'translate(1003.199px, 204.793px) scale(1.5)';
+                  break;
+              case 'Elipse_13':
+                  elipse.style.transformOrigin = '80px 97px';
+                  elipse.style.transform = 'translate(1009.02px, 614.445px) scale(1.5)';
+                  break;
+              case 'Elipse_16':
+                  elipse.style.transformOrigin = '80px 97px';
+                  elipse.style.transform = 'translate(620.855px, 885.292px) scale(1.5)';
+                  break;
+              case 'Elipse_14':
+                  elipse.style.transformOrigin = '80px 97px';
+                  elipse.style.transform = 'translate(220.628px, 614.445px) scale(1.5)';
+                  break;
+              case 'Elipse_11':
+                  elipse.style.transformOrigin = '80px 97px';
+                  elipse.style.transform = 'translate(244.252px, 204.793px) scale(1.5)';
+                  break;
+              // Agrega los casos para las demás elipses si es necesario
+          }
+          positionImage(elipse);
+      
+      }
 
-                    break;
-                case 'Elipse_12':
-                    elipse.style.transformOrigin = '80px 97px';
-                    elipse.style.transform = 'translate(1003.199px, 204.793px) scale(1.5)';
-                    break;
-                case 'Elipse_13':
-                    elipse.style.transformOrigin = '80px 97px';
-                    elipse.style.transform = 'translate(1009.02px, 614.445px) scale(1.5)';
-                    break;
-                case 'Elipse_16':
-                    elipse.style.transformOrigin = '80px 97px';
-                    elipse.style.transform = 'translate(620.855px, 885.292px) scale(1.5)';
-                    break;
-                case 'Elipse_14':
-                    elipse.style.transformOrigin = '80px 97px';
-                    elipse.style.transform = 'translate(220.628px, 614.445px) scale(1.5)';
-                    break;
-                case 'Elipse_11':
-                    elipse.style.transformOrigin = '80px 97px';
-                    elipse.style.transform = 'translate(244.252px, 204.793px) scale(1.5)';
-                    break;
-                // Agrega los casos para las demás elipses si es necesario
-            }
-        }
+      function positionImage(elipse) {
+          const rect = elipse.getBoundingClientRect();
+          console.log(rect)
+          const image = document.getElementById('d1');
+          if (image) {
+              image.style.position = 'absolute';
+              image.style.top = `${rect.top + window.scrollY - image.offsetHeight / 2 + elipse.offsetHeight / 2}px`;
+              image.style.left = `${rect.left + window.scrollX - image.offsetWidth / 2 + elipse.offsetWidth / 2}px`;
+          }
+      }
 
-        // Iniciar animación al cargar la página
-        window.onload = () => {
-            setInterval(animateElipse, 2000); // Cambia elipse cada 10 segundos
-            animateElipse(); // Inicia la animación inmediatamente
-        };
+      // Iniciar animación al cargar la página
+      window.onload = () => {
+          setInterval(animateElipse, 2000); // Cambia elipse cada 2 segundos
+          animateElipse(); // Inicia la animación inmediatamente
+      };
+  });
     </script>
 
     
