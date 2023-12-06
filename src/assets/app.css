@@ -165,6 +165,10 @@ blockquote p {
     top: -10px;
     left: 0;
 }
+.elipse {
+  transition: all 0.3s ease-in-out;
+  transform-origin: 66px 97px;
+}
 
 @media screen and (max-width: 768px){
     .bg-position{

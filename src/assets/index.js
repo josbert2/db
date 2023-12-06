@@ -67,4 +67,6 @@ export { default as ma3 } from './ma3.png';
 export { default as ma4 } from './ma4.png';
 export { default as ma5 } from './ma5.png';
 
+export { default as productos_todos } from './compromiso_ambiental/productos_todos.png';
+
 export { default as d1 } from './1d.png';
