@@ -15,6 +15,9 @@ import Header from '../../components/Header.astro';
 					bottom: 205px !important;
 				}
 			}
+			text{
+				transition: all 0.5s ease;
+			}
 		</style>
 		<div class="relative h-screen">
 			<Image src={Images.compromomiso_ambiental} class="w-full h-full astro-a object-cover " alt="Astro logo" />
@@ -89,7 +92,7 @@ import Header from '../../components/Header.astro';
 				</div>
 			</div>
 		</section>
-		<section class="bg-white py-20 relative">
+		<section class="bg-white py-20 pb-0 relative">
 			<div class="container">
 				<div class="text-[27px] uppercase text-center pb-20  font-medium text-[#384753]">
 					CICLO SOSTENIBLE
@@ -139,7 +142,7 @@ import Header from '../../components/Header.astro';
 				</div>
 			</div>
 		</section>
-		<section class="bg-white py-20 relative">
+		<section class="bg-white py-20 pt-0 relative">
 			<div class="container">
 				<!--
 				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
@@ -177,7 +180,7 @@ import Header from '../../components/Header.astro';
 					</div>
 					
 				</div>-->
-				<div class="grid  md:grid-cols-1 lg:grid-cols-2 gap-10 pt-10">
+				<div class="grid  md:grid-cols-1 lg:grid-cols-2 gap-10 ">
 					<div class="">
 						<Image src={Images.compostindustrial} class=" w-full h-full object-cover astro-a" alt="" />
 					</div>
@@ -319,23 +322,23 @@ import Header from '../../components/Header.astro';
 				<div class="text-[27px] uppercase text-center pt-20 font-medium text-[#384753]">
 					CICLO DE VIDA DE NUESTROS PRODUCTOS
 				</div>
-				<div class="pt-0 lg:py-20 md:p-10">
+				<div class="pt-5 lg:py-20 md:p-10">
 					<div class="relative">
 						<div class="absolute top-2/4 left-2/4 -translate-x-2/4 tranform -translate-y-2/4 md:pb-20 pb-10">
 							<Image src={Images.productos_todos} alt="5.1" class="h-[110px] w-[110px] md:w-[230px] md:h-[230px] lg:w-[300px] lg:h-[300px] -z-10" />
 						</div>
-						<svg xmlns="http://www.w3.org/2000/svg" class="w-full orbitsvg" width="1408.856" height="1170.261" viewBox="0 0 1408.856 1170.261">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-full orbitsvg " style="    overflow: inherit;" viewBox="0 0 1408.856 1170.261">
 							<g id="Grupo_34" data-name="Grupo 34" transform="translate(-290.104 -7222.124)">
 								<path id="Trazado_59" data-name="Trazado 59" d="M1282.407,7649.151c50.679,159.412-37.467,329.725-196.88,380.4" fill="none" stroke="#bdc9c8" stroke-miterlimit="10" stroke-width="4" />
 								<path id="Trazado_60" data-name="Trazado 60" d="M705.124,7832.674c-50.679-159.412,37.468-329.724,196.88-380.4" fill="none" stroke="#bdc9c8" stroke-miterlimit="10" stroke-width="4" />
 							</g>
 					
 							<text
-								id="_5.2_Mientras_que_el_aluminio_se_recicla_en_Chile_para_su_posterior_reutilización"
+								id="text-6"
 								data-name="5.2 Mientras que el aluminio
 						  se recicla en Chile para 
 						  su posterior reutilización"
-								transform="translate(220.628 275.349)"
+								transform="translate(200.628 275.349)"
 								font-size="16"
 								
 							>
@@ -344,10 +347,10 @@ import Header from '../../components/Header.astro';
 								<tspan x="-173.445" y="38.4">su posterior reutilización</tspan>
 							</text>
 							<text
-								id="_5.1_Los_residuos_de_café_se_transforman_en_compost."
+								id="text-5"
 								data-name="5.1 Los residuos de café
 						  se transforman en compost."
-								transform="translate(197 694.795)"
+								transform="translate(171 694.795)"
 								font-size="16"
 								
 							>
@@ -355,7 +358,7 @@ import Header from '../../components/Header.astro';
 								<tspan x="-196.625" y="19.2">se transforman en compost.</tspan>
 							</text>
 							<text
-								id="_3_Entregalo_en_tu_punto_de_recolección_más_cercano."
+								id="text-3"
 								data-name="3 Entregalo en tu punto
 						  de recolección más cercano."
 								transform="translate(1209.856 695.556)"
@@ -366,7 +369,7 @@ import Header from '../../components/Header.astro';
 								<tspan x="0" y="19.2">de recolección más cercano.</tspan>
 							</text>
 							<text
-								id="_2_Guarda_tus_cápsulas_empaques_y_borra"
+								id="text-2"
 								data-name="2 Guarda tus cápsulas, 
 						  empaques y borra"
 								transform="translate(1206.792 282.138)"
@@ -377,7 +380,7 @@ import Header from '../../components/Header.astro';
 								<tspan x="0" y="19.2">empaques y borra</tspan>
 							</text>
 							<text
-								id="_4_Las_cápsulas_son_retiradas_y_llevadas_a_plantas_de_tratamientos_de_residuos_orgánicos_donde_se_separa_el_aluminio_del_café."
+								id="text-4"
 								data-name="4 Las cápsulas son retiradasy llevadas a plantasde tratamientos de residuos orgánicos,donde se separa el aluminio del café."
 								transform="translate(534.112 1078.261)"
 								font-size="16"
@@ -707,6 +710,12 @@ import Header from '../../components/Header.astro';
 										const previousElipse = document.getElementById(previousElipseId);
 										previousElipse.classList.remove("visible");
 										previousElipse.style.transform = "";
+										document.getElementById("text-3").style.transform =  "";
+										document.getElementById("text-2").style.transform =  "";
+										document.getElementById("text-4").style.transform =  "";
+										document.getElementById("text-5").style.transform =  "";
+										document.getElementById("text-6").style.transform =  "";
+
 									} else if (currentElipseIndex === 0) {
 										const lastElipseId = elipseOrder[elipseOrder.length - 1];
 										const lastElipse = document.getElementById(lastElipseId);
@@ -730,27 +739,32 @@ import Header from '../../components/Header.astro';
 										case "Elipse_15":
 											elipse.style.transformOrigin = "80px 97px";
 											elipse.style.transform = "translate(620.855px, 2.154px) scale(1.5)";
+											document.getElementById("text-6").style.transform =  "";
 											break;
 										case "Elipse_12":
 											elipse.style.transformOrigin = "80px 97px";
 											elipse.style.transform = "translate(1003.199px, 204.793px) scale(1.5)";
-											
+											document.getElementById("text-2").style.transform =  " translate(1266.792px, 283.138px)";
 											break;
 										case "Elipse_13":
 											elipse.style.transformOrigin = "80px 97px";
 											elipse.style.transform = "translate(1009.02px, 614.445px) scale(1.5)";
+											document.getElementById("text-3").style.transform =  "translate(1272.86px, 695.556px)";
 											break;
 										case "Elipse_16":
 											elipse.style.transformOrigin = "80px 97px";
 											elipse.style.transform = "translate(620.855px, 885.292px) scale(1.5)";
+											document.getElementById("text-4").style.transform =  "translate(524.112px, 1130.261px)";
 											break;
 										case "Elipse_14":
 											elipse.style.transformOrigin = "80px 97px";
 											elipse.style.transform = "translate(220.628px, 614.445px) scale(1.5)";
+											document.getElementById("text-5").style.transform =  "translate(127px, 694.795px)";
 											break;
 										case "Elipse_11":
 											elipse.style.transformOrigin = "80px 97px";
 											elipse.style.transform = "translate(244.252px, 204.793px) scale(1.5)";
+											document.getElementById("text-6").style.transform =  "translate(161.628px, 275.349px)";
 											break;
 										// Agrega los casos para las demás elipses si es necesario
 									}
@@ -770,7 +784,7 @@ import Header from '../../components/Header.astro';
 					
 								// Iniciar animación al cargar la página
 								window.onload = () => {
-									setInterval(animateElipse, 8000); // Cambia elipse cada 2 segundos
+									setInterval(animateElipse,2000); // Cambia elipse cada 2 segundos
 									animateElipse(); // Inicia la animación inmediatamente
 								};
 							});
