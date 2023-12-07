@@ -9,6 +9,41 @@ import Header from '../../components/Header.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+	<style>
+		#Trazado_40{
+			box-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #ffdd1f, 0 0 40px #ffdd1f, 0 0 50px #ffdd1f, 0 0 60px #ffdd1f, 0 0 70px #ffdd1f;
+		}
+
+		@keyframes glowing {
+			0%, 100% {
+				filter: url(#no-glow);
+			}
+			50% {
+				filter: url(#glow-effect);
+			}
+		}
+		
+		.glow {
+			animation: glowing 2s infinite; /* This applies the animation to your path */
+		}
+		.glow-effect feGaussianBlur {
+			stdDeviation: 7.5; /* Adjust the blur radius */
+		}
+
+		.glow-effect feFlood {
+			flood-color: white; /* This is what makes the glow white */
+			flood-opacity: 1;
+		}
+
+		.glow-effect feComposite {
+			operator: in;
+			in2: SourceGraphic;
+		}
+
+		.glow-effect feMergeNode {
+			/* No attributes needed here */
+		}
+	</style>
 	<main>
 		<div class="relative h-screen">
 			<Image src={Images.headersocial} class="w-full h-full astro-a object-cover " alt="Astro logo" />
@@ -113,24 +148,24 @@ import Header from '../../components/Header.astro';
 													 debido a la estructura del mercado y la dependencia económica de muchos países en la   <br> 
 													 producción y exportación de café. Aquí hay algunas razones clave: <br> <br>
 	
-													Economía dependiente del café: Muchos países en desarrollo dependen en gran medida  <br>
+													<strong>Economía dependiente del café</strong>: Muchos países en desarrollo dependen en gran medida  <br>
 													 de la producción y exportación de café para sus ingresos. Estos países a menudo tienen  <br>
 													  economías agrícolas donde el café es uno de los principales productos de exportación. Por  <br>
 													   lo tanto, los ingresos de los productores de café están directamente vinculados al precio  <br>
 													    que obtienen por sus cosechas.
 														<br> <br>
-													Volatilidad del mercado: El mercado del café es conocido por su volatilidad. Los precios   <br>
+														<strong>Volatilidad del mercado</strong>: El mercado del café es conocido por su volatilidad. Los precios   <br>
 													pueden fluctuar significativamente debido a factores como las condiciones climáticas, las  <br>
 													 fluctuaciones en la oferta y la demanda, las políticas comerciales y otras variables. Esto  <br>
 													  hace que los productores de café sean vulnerables a cambios abruptos en sus ingresos, lo  <br>
 													  que puede afectar negativamente su capacidad para planificar a largo plazo y mejorar sus  <br>
 													   condiciones de vida. <br> <br>
 													
-													   Costos de producción: Los productores de café tienen costos fijos asociados con la producción, como mano de obra, insumos agrícolas, y mantenimiento de las plantaciones. Si los precios del café en bolsa caen por debajo de los costos de producción, los productores enfrentan pérdidas financieras, lo que puede resultar en dificultades económicas para ellos y sus comunidades.
+													   <strong>Costos de producción</strong>: Los productores de café tienen costos fijos asociados con la producción, como mano de obra, insumos agrícolas, y mantenimiento de las plantaciones. Si los precios del café en bolsa caen por debajo de los costos de producción, los productores enfrentan pérdidas financieras, lo que puede resultar en dificultades económicas para ellos y sus comunidades.
 
-													   Desigualdad en la cadena de suministro: A menudo, la cadena de suministro del café está marcada por la desigualdad de poder. Los productores suelen tener menos influencia en la fijación de precios en comparación con los intermediarios y las grandes corporaciones. Esto significa que los productores pueden recibir una parte mínima de los beneficios finales, mientras que los intermediarios y las empresas obtienen mayores márgenes de ganancia. <br> <br>
+													   <strong>Desigualdad en la cadena de suministro</strong>: A menudo, la cadena de suministro del café está marcada por la desigualdad de poder. Los productores suelen tener menos influencia en la fijación de precios en comparación con los intermediarios y las grandes corporaciones. Esto significa que los productores pueden recibir una parte mínima de los beneficios finales, mientras que los intermediarios y las empresas obtienen mayores márgenes de ganancia. <br> <br>
 													   
-													   Impacto en comunidades agrícolas: La baja de los precios del café puede tener consecuencias negativas en las comunidades agrícolas que dependen del café como fuente principal de ingresos. Puede afectar la educación, la salud y otros servicios sociales en estas comunidades, contribuyendo a la pobreza y la migración.
+													   <strong>Impacto en comunidades agrícolas</strong>: La baja de los precios del café puede tener consecuencias negativas en las comunidades agrícolas que dependen del café como fuente principal de ingresos. Puede afectar la educación, la salud y otros servicios sociales en estas comunidades, contribuyendo a la pobreza y la migración.
 													   En la era actual, el café se destaca como una de las principales exportaciones agrícolas en países en desarrollo. A diferencia de la imagen romántica asociada con el grano, la mayoría del café se produce como semilla verde, luego tostada y comercializada con poca información sobre su origen. Similar a otras materias primas agrícolas, el café se negocia en contratos a futuro en varias bolsas, con su precio dictado por fuerzas económicas globales como la oferta y la demanda, influidas por los principales productores y compradores.
 													   Desde el colapso del Convenio Internacional del Café, el precio del café como commodity ha experimentado una marcada disminución, afectado también por factores externos a la industria cafetera. El precio mínimo que los productores han recibido por su café ha rondado los 1,20 $/lb desde entonces, pero en años recientes, con mayor frecuencia se sitúa por debajo de los 1,00 $/lb, considerado por muchos expertos de la industria como inferior al costo de producción.
 													   En resumen, el precio del café en bolsa afecta a los productores porque sus ingresos y condiciones de vida están estrechamente vinculados a la viabilidad económica de la producción de café, y la volatilidad y la desigualdad en la cadena de suministro pueden exacerbar estos impactos.
@@ -473,7 +508,29 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 					<div class="pt-20 pb-5 md:pb-10">
 						<div class="md:grid md:grid-cols-3">
 							<div class="col-span-2 md:pr-10 md:p-24transform scale-[0.8]">
-								<Image src={Images.mapa} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
+								
+								<svg xmlns="http://www.w3.org/2000/svg" style="overflow: inherit;" class="w-full" viewBox="0 0 610.027 309.063">
+									<defs>
+										<filter id="glow-effect" class="glow-effect">
+										  <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur" />
+										  <feFlood flood-color="white" result="flood" />
+										  <feComposite in="flood" in2="blur" operator="in" result="mask" />
+										  <feMerge>
+											<feMergeNode in="mask" />
+											<feMergeNode in="SourceGraphic" />
+										  </feMerge>
+										</filter>
+									  </defs>
+									
+									
+									<g id="Grupo_27"   data-name="Grupo 27" transform="translate(-439.532 -5117.178)">
+									  <path id="Trazado_39" data-name="Trazado 39" d="M581.588,5134.453c2.459-.935,5.693-2.66,9.126-3.4,10.717-2.3,20.245-1.148,28.38,7.8,5.872,6.507,9.13,5.48,17.045-2.34,13.995,3.033,27.825,6.226,41.757,8.929,2.96.572,7.028.436,9.227-1.192,4.584-3.391,8.833-1.865,13.557-1.511,4.523.339,9.186-1.469,13.794-1.386,4.2.058,8.355,1.507,12.56,2.127,2.239.334,4.761.828,6.786.155,3.61-1.192,7.96-2.365,10.16-5.039,5.1-6.25,11.672-6.1,18.557-6.749,4.467-.417,8.794-2.481,13.176-3.789-.158-.62-.3-1.211-.434-1.807-2.977-1.609-5.957-3.232-9.467-5.141,3.91-3.769,6.948-4.327,11.2-2.718,5.833,2.224,12.1,3.237,18.113,5.058a39.173,39.173,0,0,1,9.351,3.872c8.893,5.494,18.179,5.7,28.138,3.691,5.736-1.148,11.807-.474,17.687-1.148a10.848,10.848,0,0,0,6.012-3.139c6.013-6.11,13.215-7.084,21.057-3.513a143.828,143.828,0,0,0,23.159,8.551c4.484,1.192,5.97,2.646,4.821,6.973-.179.61.473,1.443,1.548,4.418,1.132-2.534,1.727-3.924,2.161-4.874,3.176,1.051,5.758,1.9,8.358,2.752.174-.61.378-1.231.574-1.841-3.51-1.192-7-2.384-10.521-3.571.121-.717.262-1.429.378-2.146,2.921,0,5.918-.359,8.777.058,7.56,1.153,15.177,2.224,22.541,4.23,3.077.833,5.676,3.788,8.2,6.109,8.3,7.583,16.432,15.325,24.649,23a61.875,61.875,0,0,0,21.931,13.14c10.911,3.9,21.314,9.486,31.551,15.024,2.818,1.507,5.318,5.18,6.234,8.353,1.807,6.352,4.7,11,11.33,13,2.025.616,3.714,2.263,5.654,3.494-6.148,5.019-12.224.9-18.239.678a18.18,18.18,0,0,0-5.3.988c-1.507.417-3.472,2-4.3,1.507-5.775-3.43-6.868,1.27-8.99,4.608-1.168,1.846-2.5,4.1-4.307,4.923-11.171,5.058-22.324,10.213-33.855,14.326-3.809,1.367-8.675-.295-12.7.122-5.436,1.269-10.9,2.534-17.326,4.026-2.522,6.807.4,6.071-12.321,2.6-5.063,11.313-13.951,3.353-21.236,3.793-2.858.18-5.816-2.2-8.752-2.243-5.238-.058-6.987-3.212-8.416-7.326-2.837-8.134-8.629-9.2-14.385-2.878a15.681,15.681,0,0,1-4.608,3.949c-4.821,2.306-6.783,5.756-6.524,11.158.078,1.924-1.868,5.514-3.156,5.655-6.49.654-7.723,5.654-10,10.16-2.425,4.782-5.259,8.871-.119,14.167,2.837,2.941-1.569,8.716-6.57,8.057-7.5-.988-10.819,2.326-14.649,8.518-3.071,5-9.624,8.212-15.136,11.289-6.015,3.352-12.8,5.339-18.9,8.614-1.388.756-1.962,4.39-1.705,6.546.3,2.582,2.4,5.339-1.686,6.313-3.392.814-6.847,1.308-8.85-3.052-.753-1.609-2.856-3.479-4.489-3.639-8.135-.809-13.629-7.239-12.658-15.3-8.336-1.763-11.233,5.262-15.62,9.807-2.638,2.757-5.136,5.678-7.561,8.634-1.625,2.005-3.59,4.006-4.382,6.352-1.97,5.717-5.582,7.9-11.65,6.133-3.438-1.012-6.829-2.228-10.262-3.275a7.613,7.613,0,0,0-2.975-.557c-6.076.717-12.13,1.565-18.559,2.422-3.212,12.544-1.068,25.481.281,38.4.08.712,1.109,1.293,1.267,2.006.6,2.742,1.034,5.513,1.512,8.275-2.643.179-5.439,1.032-7.881.417-5.637-1.425-10.143,1.25-11.628,7.82a26.5,26.5,0,0,0-.361,4.883c-.431,11.905-4.78,16.013-16.706,16.071-3.258,0-6.492.48-9.729.776-8.689.814-15.339-1.711-17.994-10.858-.061-.179-.138-.514-.218-.533-10.185-1.168-5.977-13.91-13.7-17.205-.358-.14-.082-2.9.591-4.007.778-1.269,2.348-2.025,3.573-3-.235-.518-.472-1.037-.692-1.531-3.634,1.391-7.363,2.582-10.858,4.269-.989.474-1.328,2.34-1.963,3.551-.692,1.313-1.167,3.416-2.165,3.711-1.209.378-3.886-.412-4.2-1.327-2.605-7.127-9.012-10.461-14.192-15a6.1,6.1,0,0,1-.913-1.671c2.837-1.764,5.64-3.493,10.3-6.391-11.354-1.705-8.9-7.146-6.509-12.917a127.489,127.489,0,0,0,3.987-12.684c1.328-4.462-3.038-15.7-6.429-15.718-5.637,0-11.275.916-16.929,1.217a7.66,7.66,0,0,1-4.644-1.217c-2-1.468-3.551-5-5.339-5.019-4.547-.078-9.523.4-13.574,2.3-5.518,2.6-10.339,6.706-17.069,4.627a4.149,4.149,0,0,0-1.209.039c-3.2.218-7.483,1.8-9.326.334-2.224-1.783-2.4-6.153-3.872-10.6-4.144-1.187-9.845-1.807-14.389-4.443-4.2-2.442-7.421-6.41-12.995-6.032-.673.039-1.8-1.671-2.183-2.737-1.969-5.461-4.27-9.511-11.415-9.787-2.616-.083-5.276-5.122-7.48-8.218-2.144-3.013-3.731-6.429-6.054-10.538-4.86,6.294-8.952,5.873-13.651.873-1.548-1.624-5.6-.635-8.237-1.57-2.122-.727-5.041-2.277-5.458-4-.417-1.652,1.744-4.089,3.079-5.979,1.146-1.647,2.873-2.878,4.043-4.5,3.021-4.211,6.115-8,12.4-5.441,1.887-8.072,2.224-15.282-3.031-21.648-2.982-3.61-2.347-6.846-.123-10.635,1.429-2.442,2.582-5.717,2.2-8.377-.654-4.705,1.153-7.6,4.821-9.6,3.038-1.647,6.492-2.524,9.508-4.191,4.94-2.757,9.7-5.833,14.468-8.891,4.445-2.839,8.927-5.659,13.1-8.852q14.553-11.133,28.814-22.641c6.889-5.562,13.416-11.594,20.465-16.928,1.548-1.173,4.625-.184,6.963-.48,2.182-.257,4.939-.213,6.369-1.507,3.735-3.314,6.492-7.4,12.347-7.994,2-.2,3.612-4.249,6.093-7.4m383.1,44.216c11.568,1.444,24.385,11.008,25.757,19.186,2.756-1.23,5.576-2.34,8.253-3.75,1.115-.6,2.8-2.1,2.621-2.757a6.244,6.244,0,0,0-2.858-3.217c-3-1.667-6.468-2.577-9.208-4.564-5.872-4.244-13.913-4.84-18.436-11.647-1.289-1.924-5.259-2.084-8.932-3.377C963.1,5172.913,963.828,5175.553,964.685,5178.669Zm-2.546,5.354q-1.752-5.451-3.508-10.9C956.628,5177.656,952.837,5182.516,962.139,5184.023Z" fill="#f2f4f4" stroke="#f2f4f4" stroke-miterlimit="10" stroke-width="1" opacity="0.1"/>
+									  <path id="Trazado_40" filter="url(#glow-effect)"  class="normal" data-name="Trazado 40" d="M477.391,5300.426c2.131,1.529,2.687-10.156,2.687-10.156a36.662,36.662,0,0,0,5.687-4.707c1.517-1.863,4.55-2.118,6.067-2.5a2.919,2.919,0,0,1,3.6,1.9c.758,1.706,2.464-.569,2.275-2.465s1.64-4.1,5.237-8.3,1.2-6.6,0-6.6H488.557c-1.8,0-3.6-4.8-4.8-7.194s-5.4-5.4-5.4-5.4-1.8-4.2-3-7.939-15.782,0-15.782,0,1.554,13.133.01,16.532c0,0-4.088-2.512-7.128.025a76.821,76.821,0,0,0-6.979,7.33c-.764.765-6.5,6.971-5.419,8.566s5.458,4,5.458,4l8.237,1.57s2.721,5.749,8.016,3.616,5.635-4.489,5.635-4.489S473.833,5297.873,477.391,5300.426Z" fill="#f2f4f4" />
+									</g>
+									<text id="HONDURAS" transform="translate(288.757 255.207)" stroke="#fff" stroke-miterlimit="10" stroke-width="1" font-size="62.612" font-family="SegoeUI, Segoe UI" letter-spacing="0.075em" fill="none"><tspan x="-184.69" y="0">HONDURAS</tspan></text>
+									<text id="OCOTOPEQUE" transform="translate(162.034 284.297)" fill="#fff" font-size="19.348" font-family="SegoeUI, Segoe UI" letter-spacing="0.075em"><tspan x="-67.469" y="0">OCOTOPEQUE</tspan></text>
+								  </svg>
+								  
 							</div>
 							<div class="md:mt-0 mt-5">
 								<div class="grid grid-cols-2 gap-1 md:p-6 transform md:scale-[0.9] scale-[0.75]" >
@@ -528,8 +585,8 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 										YANCI YORLENY SANTOS. 
 									</div>
 									<p class="text-[14px]  text-left px-8 pb-10">
-										Edad: 17<br>
-										Organización a la que pertenece: UNIOCAFE <br><br>
+										<strong>Edad</strong>: 17<br>
+										<strong>Organización a la que pertenece</strong>: UNIOCAFE específicamente a la organización de base de Tulas <br><br>
 
 										Comunidad: los limos, municipio de Sinuapa, departamento de Ocotepeque 
 										Su núcleo familiar esta constituido por 6 miembros (sus padres y 4 hijos), es parte de una familia caficultora, que cuenta con un área de café de 7 manzanas, cultivadas bajo sombra, el café producido es entregado a UNIOCAFE.<br><br>
