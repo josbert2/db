@@ -7,12 +7,12 @@ import '../../assets/app.css';
 import Header from '../../components/Header.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Compromiso ambiental">
 	<main>
 		<style>
 			@media  (min-width: 768px) {
 				.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-					bottom:157px!important;
+					bottom:-25px !important;
 				}
 			}
 			text{
@@ -48,7 +48,8 @@ import Header from '../../components/Header.astro';
 							<div class="header  text-[23px] py-5 text-center  font-medium text-[#384753]">
 								Diseño integral
 							</div>
-							<p  class="text-[14px] mb-10 font-medium">Que involucra en la misma ecuación al medioambiente, diseño y la calidad, diseñando en una sola línea un café en envases medioambientalmente responsables, con atractivos diseños y con calidad de excelencia.
+							<p  class="text-[14px] mb-10 font-medium">
+								Que involucra en la misma ecuación al medioambiente, diseño y la calidad, diseñando en una sola línea un café en envases medioambientalmente responsables, con atractivos diseños y con calidad de excelencia.
 							</p>
 						
 		
@@ -63,7 +64,7 @@ import Header from '../../components/Header.astro';
 							<div class="header  text-[23px] py-5 text-center font-medium text-[#384753]">
 								Desafíos medioambientales
 							</div>
-							<p  class="text-[14px] mb-10 font-medium">Que involucra en la misma ecuación al medioambiente, diseño y la calidad, diseñando en una sola línea un café en envases medioambientalmente responsables, con atractivos diseños y con calidad de excelencia.
+							<p  class="text-[14px] mb-10 font-medium">Somos conscientes de los desafíos medioambientales de la industria, nos cuestionamos dia a dia como mejorar e impactar positivamente en el planeta y buscar alternativas que disminuyan nuestra huela.
 							</p>
 						
 		
@@ -113,25 +114,25 @@ import Header from '../../components/Header.astro';
 								<div class="text-[23px]  text-center   font-medium text-[#384753]">
 									Cápsulas de Aluminio
 								</div>
-								<Image src={Images.slidercompromiso1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain astro-a mt-[-133px]" alt="" />
+								<Image src={Images.slidercompromiso1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain astro-a md:mt-[-133px]" alt="" />
 							</div>
 							<div class="swiper-slide" >
 								<div class="text-[23px]  text-center   font-medium text-[#384753]">
 									Grano / Molido
 								</div>
-								<Image src={Images.grano1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a mt-[-133px]" alt="" />
+								<Image src={Images.grano1} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a md:mt-[-133px]" alt="" />
 							</div>
 							<div class="swiper-slide" >
 								<div class="text-[23px]  text-center   font-medium text-[#384753]">
 									Cápsulas Compostables
 								</div>
-								<Image src={Images.slidercompromiso3} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a mt-[-133px]" alt="" />
+								<Image src={Images.slidercompromiso3} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a md:mt-[-133px]" alt="" />
 							</div>
 							<div class="swiper-slide" >
 								<div class="text-[23px]  text-center   font-medium text-[#384753]">
 									Cápsulas de Aluminio
 								</div>
-								<Image src={Images.slidercompromiso4} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a mt-[-133px]" alt="" />
+								<Image src={Images.slidercompromiso4} class="h-full md:h-[636px] rounded-t-lg w-full object-cover md:object-contain  astro-a md:mt-[-133px]" alt="" />
 							</div>
 							
 						</div>
@@ -142,7 +143,7 @@ import Header from '../../components/Header.astro';
 				</div>
 			</div>
 		</section>
-		<section class="bg-white py-20 pt-0 relative">
+		<section class="bg-white md:py-20 pt-20 relative">
 			<div class="container">
 				<!--
 				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
@@ -224,7 +225,7 @@ import Header from '../../components/Header.astro';
 					</div>
 				</div>
 			</div>
-			<div class="md:px-0 px-10 flex justify-center bottom-[-211px] md:bottom-[-383px] md:bottom-[-305px] transform left-2/4 -translate-x-2/4 absolute z-10 w-full">
+			<div class="md:px-0 px-10 flex justify-center bottom-[-310px] md:bottom-[-383px] md:bottom-[-305px] transform left-2/4 -translate-x-2/4 absolute z-10 w-full">
 				<div class="bg-[#F1F4F4] w-full md:pb-20 pb-5 md:pb-[5rem] md:px-14 md:py-16  py-5 text-center md:max-w-[650px] justify rounded-t-lg rounded-b-lg blackdrop-card-somos">
 					<div class="text-[21px] uppercase text-center pb-10  font-medium text-[#384753]">
 						¿CÓMO LO HAREMOS?
@@ -239,7 +240,7 @@ import Header from '../../components/Header.astro';
 			</div>
 			
 		</section>
-		<section class="bg-white py-20 relative">
+		<section class="bg-white md:py-20 pt-40 relative">
 			<div class="container pt-[16rem] md:pt-[25rem]">
 				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-10">
 					<div class="">
@@ -260,7 +261,7 @@ import Header from '../../components/Header.astro';
 				</div>
 			</div>
 		</section>
-		<section class="bg-white py-20 relative">
+		<section class="bg-white py-10 md:py-20 relative">
 			<div class="container ">
 				<div class="md:grid md:grid-cols-5 gap-10">
 					<div class="">
