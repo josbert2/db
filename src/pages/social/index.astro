@@ -46,38 +46,38 @@ import Header from '../../components/Header.astro';
 	</style>
 	<main>
 		<div class="relative h-screen">
-			<Image src={Images.headersocial} class="w-full h-full astro-a object-cover " alt="Astro logo" />
+			<Image src={Images.headersocial} class="object-cover w-full h-full astro-a " alt="Astro logo" />
 			<Header />
 			
 			<div class=" absolute z-10 flex-col flex bottom-[-250px]  md:bottom-0  lg:-bottom-10 transform rounded-t-lg rounded-b-lg  left-0 w-full ">
 				<div class="container mx-auto">
-					<div class="blackdrop_header rounded-t-lg md: lg:px-5 lg:pb-0 pb-0 md:py-5  text-white font-bold text-4xl px-5 text-left  ">
+					<div class="px-5 pb-0 text-4xl font-bold text-left text-white rounded-t-lg blackdrop_header md: lg:px-5 lg:pb-0 md:py-5 ">
 						<h3 class="uppercase 
 								md:text-[2.313rem] lgx:text-[2.5rem] lg:text-[2.563rem] xl:text-[3.50rem]
-								md:leading-[3.688rem]  lgx:leading-[3rem]">COMPROMISO <br class="md:block hidden"> SOCIAL</h3>
-						<p class="text-[13px] font-normal mt-4  leading-[21px]">La inspiración y motivación que nos entrega cada taza de café <br class="md:block hidden">
-							nos mueve a comprometernos con una caficultura sustentable, <br class="md:block hidden">
-							resiliente y que transforma vidas y por sobre todo entrega <br class="md:block hidden">
+								md:leading-[3.688rem]  lgx:leading-[3rem]">COMPROMISO <br class="hidden md:block"> SOCIAL</h3>
+						<p class="text-[13px] font-normal mt-4  leading-[21px]">La inspiración y motivación que nos entrega cada taza de café <br class="hidden md:block">
+							nos mueve a comprometernos con una caficultura sustentable, <br class="hidden md:block">
+							resiliente y que transforma vidas y por sobre todo entrega <br class="hidden md:block">
 							oportunidades.</p>
 					</div>
-					<div class="md:  lg:px-5 px-5 lg:pt-5 lgx:pt-5 pb-20">
+					<div class="px-5 pb-20 md: lg:px-5 lg:pt-5 lgx:pt-5">
 						<div class="grid md:grid-cols-2 ">
 							<div class="">
 								<div class="text-3xl uppercase  font-semibold text-[#384753]">
-									<h4 class="mb-3 font-medium text-[22px] md_text-[27px]">SON MÁS DE 25 MM <br class="md lg:block hidden"> DE CAFICULTORES</h4>
+									<h4 class="mb-3 font-medium text-[22px] md_text-[27px]">SON MÁS DE 25 MM <br class="hidden md lg:block"> DE CAFICULTORES</h4>
 									<p class="font-medium  text-[12px] leading-[21px]">
-										en todo el mundo y 125mm de personas que dependen del café <br class="md lg:block hidden">
-										en las fases iniciales de la cadena que se ven afectadas por <br class="md lg::block hidden">
-										diversas problemáticas, siendo una la que más nos preocupa, el <br class="md lg::block hidden">
+										en todo el mundo y 125mm de personas que dependen del café <br class="hidden md lg:block">
+										en las fases iniciales de la cadena que se ven afectadas por <br class="hidden md lg::block">
+										diversas problemáticas, siendo una la que más nos preocupa, el <br class="hidden md lg::block">
 										futuro de los jóvenes, dado que compromete el futuro del café.
 									</p>
 								</div>
 							</div>
 							<div class="md:border-l md:pl-10 md:ml-10 borde-0 border-[#384753]  md:pt-0 pt-10">
 								<div class="text-3xl uppercase font-semibold text-[#384753]">
-									<h4 class="mb-3 font-medium text-[22px] md_text-[27px]">NUESTRO <br class="md lg:block hidden"> COMPROMISO</h4>
+									<h4 class="mb-3 font-medium text-[22px] md_text-[27px]">NUESTRO <br class="hidden md lg:block"> COMPROMISO</h4>
 									<p class="font-medium  text-[12px] leading-[21px]">
-										Nuestro compromiso va desde la semilla a la taza ( bean to cup ),<br class="md lg:block hidden">
+										Nuestro compromiso va desde la semilla a la taza ( bean to cup ),<br class="hidden md lg:block">
 										vamos más allá tratando de cambiar el modelo.
 									</p>
 								</div>
@@ -89,8 +89,8 @@ import Header from '../../components/Header.astro';
 		</div>
 	
 
-		<section class="py-20 md:pt-5 pt-72 bg-white relative" style={` `}>
-			<div class=" md:px-0 px-5">
+		<section class="relative py-20 bg-white md:pt-5 pt-72" style={` `}>
+			<div class="px-5 md:px-0">
 				<div class=" uppercase text-[27px] text-center font-medium text-[#384753]">
 					ACTUALIDAD ¿PROBLEMÁTICA?
 				</div>
@@ -99,13 +99,13 @@ import Header from '../../components/Header.astro';
 					de data histórica como:
 				</p>
 			</div>
-			<div class="container px-5 md:px-20 pt-16 mx-auto">
-				<div class="grid md:grid-cols-1 lg:grid-cols-3 gap-10 auto-rows-fr">
+			<div class="container px-5 pt-16 mx-auto md:px-20">
+				<div class="grid gap-10 md:grid-cols-1 lg:grid-cols-3 auto-rows-fr">
 					<div class="bg-[#F1F4F4] flex-col flex">
-						<div class="h-[166px] rounded-t-lg">
-							<Image src={Images.finca} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
+						<div class="h-[205px] rounded-t-lg">
+							<Image src={Images.flutuacion} class="object-cover w-full h-full rounded-t-lg astro-a" alt="" />
 						</div>
-						<div class="px-5 text-center items-center  flex flex-col h-full">
+						<div class="flex flex-col items-center h-full px-5 text-center">
 							<div class="header text-[23px] py-5 px-5 text-center  font-medium text-[#384753]">
 								Fluctuación de precios
 							</div>
@@ -117,9 +117,9 @@ import Header from '../../components/Header.astro';
 
 							<Modal id="precio" open="CONOCE MÁS" classProps='border-[#384753] border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
 								<main slot="main">
-									<div class="md:grid flex flex-col md:grid-cols-5">
+									<div class="flex flex-col md:grid md:grid-cols-5">
 										<div class=" col-span-2 bg-[#384753] h-full px-10 py-3 md:mr-4">
-											<svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="0 0 317.367 366.846">
+											<svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 317.367 366.846">
 												<g id="Componente_1_1" data-name="Componente 1 – 1" transform="translate(1.5 2.121)">
 												  <g id="Grupo_17" data-name="Grupo 17" transform="translate(-2975.769 -1973.794)">
 													<path id="Trazado_9" data-name="Trazado 9" d="M3162.378,2337.019h-56.25V2215.59h56.25Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
@@ -177,7 +177,7 @@ import Header from '../../components/Header.astro';
 									</div>
 								</main>
 								<button slot="close" class="absolute top-1 right-3">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white md:text-gray-300">
 										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 									</svg>
 								</button>
@@ -186,10 +186,10 @@ import Header from '../../components/Header.astro';
 						</div>
 					</div>
 					<div class="bg-[#F1F4F4] flex-col flex">
-						<div class="h-[166px]">
-							<Image src={Images.siempre} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
+						<div class="h-[205px]">
+							<Image src={Images.cambioclimatico} class="object-cover w-full h-full rounded-t-lg astro-a" alt="" />
 						</div>
-						<div class="px-5 text-center items-center  flex flex-col h-full">
+						<div class="flex flex-col items-center h-full px-5 text-center">
 							<div class="header text-[23px] py-5 text-center  md:pl-0 pl-3 font-medium text-[#384753]">
 								El cambio climático
 							</div>
@@ -203,9 +203,9 @@ import Header from '../../components/Header.astro';
 
 							<Modal id="climatico" open="CONOCE MÁS" classProps='border-[#384753] border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
 								<main slot="main">
-									<div class="md:grid flex flex-col md:grid-cols-5">
+									<div class="flex flex-col md:grid md:grid-cols-5">
 										<div class=" col-span-2 bg-[#384753] h-full px-10 py-3 md:mr-4">
-											<svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" viewBox="0 0 288.203 374.853">
+											<svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 288.203 374.853">
 												<g id="Componente_2_1" data-name="Componente 2 – 1" transform="translate(1.5 1.5)">
 												  <g id="Grupo_12" data-name="Grupo 12" transform="translate(-4590.87 -1921.225)">
 													<circle id="Elipse_10" data-name="Elipse 10" cx="142.601" cy="142.601" r="142.601" transform="translate(4590.87 2007.876)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
@@ -250,7 +250,7 @@ import Header from '../../components/Header.astro';
 									</div>
 								</main>
 								<button slot="close" class="absolute top-1 right-3 ">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white md:text-gray-300">
 										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 									</svg>
 								</button>
@@ -258,10 +258,10 @@ import Header from '../../components/Header.astro';
 						</div>
 					</div>
 					<div class="bg-[#F1F4F4] flex-col flex">
-						<div class="h-[166px]">
-							<Image src={Images.innvo} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
+						<div class="h-[205px]">
+							<Image src={Images.bajo} class="object-cover w-full h-full rounded-t-lg astro-a" alt="" />
 						</div>
-						<div class="px-5 text-center items-center  flex flex-col h-full">
+						<div class="flex flex-col items-center h-full px-5 text-center">
 							<div class="header text-[23px] py-5 text-left px-5  font-medium text-[#384753]">
 								Baja motivación
 							</div>
@@ -274,9 +274,9 @@ import Header from '../../components/Header.astro';
 								estables oportunidades.</p>
 								<Modal id="MOTIVACION" open="CONOCE MÁS" classProps='border-[#384753] border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white transition-all'>
 									<main slot="main">
-										<div class="md:grid flex flex-col md:grid-cols-5">
+										<div class="flex flex-col md:grid md:grid-cols-5">
 											<div class=" col-span-2 bg-[#384753] h-full px-10 py-3 md:mr-4">
-												<svg xmlns="http://www.w3.org/2000/svg"  class="h-full w-full" viewBox="0 0 280.717 377.753">
+												<svg xmlns="http://www.w3.org/2000/svg"  class="w-full h-full" viewBox="0 0 280.717 377.753">
 													<g id="Componente_2_1" data-name="Componente 2 – 1" transform="translate(1.5 1.5)">
 													  <path id="Trazado_1" data-name="Trazado 1" d="M6356.624,1993.542a38,38,0,0,0-36.706-28.176h-78.281a38,38,0,0,0-36.707,28.176l-17.872,66.791H6374.5Z" transform="translate(-6146.795 -1965.366)" fill="#384753" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
 													  <path id="Trazado_2" data-name="Trazado 2" d="M6359.522,2250.054c-29.528,29.528-77.774,29.156-77.774,29.156s-.372-48.246,29.155-77.774,77.775-29.156,77.775-29.156S6389.05,2220.526,6359.522,2250.054Z" transform="translate(-6146.795 -1965.366)" fill="#384753" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
@@ -337,26 +337,26 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 			
 		</section>
 
-		<section class="py-20 pt-5 bg-white relative" style={` `}>
-			<div class="container px-5 md:px-20 pt-16  mx-auto">
-				<div class="md:grid md:grid-cols-1 lg:grid-cols-2 gap-5">
-					<div class="md:px-20 md:py-20 md:pt-0 md:pb-0 pb-10 vision-blackdrop">
-						<Image src={Images.vision} class="rounded-t-lg w-full h-full object-cover astro-a " alt="" />
+		<section class="relative py-20 pt-5 bg-white" style={` `}>
+			<div class="container px-5 pt-16 mx-auto md:px-20">
+				<div class="gap-5 md:grid md:grid-cols-1 lg:grid-cols-2">
+					<div class="pb-10 md:px-20 md:py-20 md:pt-0 md:pb-0 vision-blackdrop">
+						<Image src={Images.vision} class="object-cover w-full h-full rounded-t-lg astro-a " alt="" />
 					</div>
 					<div class="">
 						<div class="text-[27px] uppercase text-left  font-medium text-[#384753]">
 							VISIÓN
 						</div>
 						<p class="text- pt-4 text-[13px] font-medium text-[#384753]">
-							Un paso a la vez, nuestras acciones determinarán nuestro <br class="md:block hidden">
-							impacto, nuestro compromiso bean to cup es con el presente y  <br class="md:block hidden">
-							futuro del café por eso que blackdrop estamos comprometidos  <br class="md:block hidden">
-							con el café, con el desarrollo y motivación de las nuevas  <br class="md:block hidden">
-							generaciones cafeteras, buscando un futuro sostenible que  <br class="md:block hidden">
+							Un paso a la vez, nuestras acciones determinarán nuestro <br class="hidden md:block">
+							impacto, nuestro compromiso bean to cup es con el presente y  <br class="hidden md:block">
+							futuro del café por eso que blackdrop estamos comprometidos  <br class="hidden md:block">
+							con el café, con el desarrollo y motivación de las nuevas  <br class="hidden md:block">
+							generaciones cafeteras, buscando un futuro sostenible que  <br class="hidden md:block">
 							genere un mercado de oportunidades y crecimiento.
 							<br><br>
-							Medimos nuestras acciones bajo objetivos concretos y plazos  <br class="md:block hidden">
-							definidos de manera de cuantificar el impacto que junto a tu  <br class="md:block hidden">
+							Medimos nuestras acciones bajo objetivos concretos y plazos  <br class="hidden md:block">
+							definidos de manera de cuantificar el impacto que junto a tu  <br class="hidden md:block">
 							preferencia podemos lograr.
 						</p>
 					</div>
@@ -365,10 +365,10 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 		</section>
 
 		<section class="md:py-20 py-5 md:pt-5 bg-[#F1F4F4] relative" style={` `}>
-			<div class="container md:px-20 md:pt-16 mx-auto pb-10">
-				<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-5">
-					<div class="   pt-20 pr-6 md:ml-14">
-						<div class="blackdrop_header rounded-t-lg  py-5   text-white font-bold text-4xl  text-left  ">
+			<div class="container pb-10 mx-auto md:px-20 md:pt-16">
+				<div class="grid gap-5 md:grid-cols-1 lg:grid-cols-2">
+					<div class="pt-20 pr-6 md:ml-14">
+						<div class="py-5 text-4xl font-bold text-left text-white rounded-t-lg blackdrop_header ">
 							<h3 class="uppercase text-2xl md:text-[42px] font-bold text-[#384753]">
 								CONOCE NUESTRO <br>
 								PRIMER PROYECTO :
@@ -383,27 +383,27 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 							<div class="border-b border-[#384753]/30 pb-4"></div>
 						</div>
 						<p class="text-left  font-medium pt-6 text-[13px] text-[#384753]">
-							Nos sumamos a la fundación internacional Hanns r. Neumann  <br class="md:block hidden">
-							stiftung, en un programa donde nos comprometemos con jóvenes   <br class="md:block hidden">
-							innovadores contra el cambio climático, conoce a continuación el   <br class="md:block hidden">
+							Nos sumamos a la fundación internacional Hanns r. Neumann  <br class="hidden md:block">
+							stiftung, en un programa donde nos comprometemos con jóvenes   <br class="hidden md:block">
+							innovadores contra el cambio climático, conoce a continuación el   <br class="hidden md:block">
 							impacto que tiene tu preferencia.
 							</p>
 							<div class="px-3">
-								<Image src={Images.hanns} class="rounded-t-lg  object-contain astro-a" alt="" />
+								<Image src={Images.hanns} class="object-contain rounded-t-lg astro-a" alt="" />
 							</div>
 					</div>
 					<div class="">
-						<Image src={Images.primer_proyecto} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
+						<Image src={Images.primer_proyecto} class="object-cover w-full h-full rounded-t-lg astro-a" alt="" />
 					</div>
 				</div>
 			</div>
 			<div class='container'>
 				<div class='border-t border-[#384753]/30 w-full'></div>
 			</div>
-			<div class="flex md:px-20 flex-col md:flex-col xl:flex-row lg:flex-row mt-4  ">
-				<div class="md:ml-0 ml-5 col-span-2 md:flex   items-center">
+			<div class="flex flex-col mt-4 md:px-20 md:flex-col xl:flex-row lg:flex-row ">
+				<div class="items-center col-span-2 ml-5 md:ml-0 md:flex">
 					<div class="text-[27px] uppercase text-center w-full md:text-center lg:text-left   md:pl-0 lg:pl-[12px] xl:pl-24 font-medium text-[#384753]">
-						OBJETIVOS <br class="md:hidden lg:block hidden">MACRO
+						OBJETIVOS <br class="hidden md:hidden lg:block">MACRO
 					</div>
 				</div>
 				<div class="divide-x flex md:flex-row md:justify-end w-full md:pr-0 lg:pr-[12px] xl:pr-24 flex-col col-span-3 gap-5  divide-[#384753]/30">
@@ -411,27 +411,27 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						Bajar la tasa de deserción de los <br class="hidden"> jóvenes en el café
 					</p>
 					<p class="md:text-center pl-5 font-medium pt-6 text-[13px] text-[#384753]">
-						Fomentar la resiliencia de las  <br class=" hidden"> comunidades frente al cambio  <br class="hidden"> Climático
+						Fomentar la resiliencia de las  <br class="hidden "> comunidades frente al cambio  <br class="hidden"> Climático
 
 					</p>
 					<p class="md:text-center pl-5  font-medium pt-6 text-[13px] text-[#384753]">
-						Empoderamiento de las nuevas  <br class=" hidden"> generaciones de caficultores
+						Empoderamiento de las nuevas  <br class="hidden "> generaciones de caficultores
 					</p>
 					
 				</div>
 			</div>
-			<div class="container px-5 md:px-20 pt-16 mx-auto  pb-10">
-				<div class="grid md:grid-cols-2 pt-10 md:pl-14">
-					<div class="md:mb-0 mb-5">
+			<div class="container px-5 pt-16 pb-10 mx-auto md:px-20">
+				<div class="grid pt-10 md:grid-cols-2 md:pl-14">
+					<div class="mb-5 md:mb-0">
 						<div class="text-[27px] uppercase text-left  font-medium text-[#384753]">
 							OBJETIVO
 						</div>
 						<p class="  font-medium pt-6 text-[13px] text-[#384753]">
-							Crear un ciclo de aprendizaje continuo que promueva la gestión <br class="md:block hidden">
-							sostenible de los recursos y desarrolle vías de emprendimiento <br  class="md:block hidden">
-							a medida que los jóvenes adquieren confianza en sí mismos y <br  class="md:block hidden">
-							habilidades para asumir roles de liderazgo activo en sus <br  class="md:block hidden">
-							comunidades y dentro de sus organizaciones de agricultores <br  class="md:block hidden">
+							Crear un ciclo de aprendizaje continuo que promueva la gestión <br class="hidden md:block">
+							sostenible de los recursos y desarrolle vías de emprendimiento <br  class="hidden md:block">
+							a medida que los jóvenes adquieren confianza en sí mismos y <br  class="hidden md:block">
+							habilidades para asumir roles de liderazgo activo en sus <br  class="hidden md:block">
+							comunidades y dentro de sus organizaciones de agricultores <br  class="hidden md:block">
 							para aumentar la resiliencia a los efectos del cambio climático.
 						</p>
 					</div>
@@ -456,7 +456,7 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 					<rect id="Rectángulo_65" data-name="Rectángulo 65" width="54.307" height="54.307" transform="translate(38.401) rotate(45)" fill="#f2f4f4"/>
 				</svg>
 			</div>
-			<div class="container px-5 md:px-20 pt-24 mx-auto  pb-10">
+			<div class="container px-5 pt-24 pb-10 mx-auto md:px-20">
 				<div class="">
 					<div class="text-[27px] uppercase text-center  font-medium text-[#F2F4F4]">
 						PROYECTO HONDURAS
@@ -495,10 +495,10 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 					
 					<div class="flex justify-center mt-8">
 						<p class="leading-[22px]  font-medium pt-6 text-[13.5px] text-center text-[#F2F4F4]">
-							El proyecto se centra en desarrollar habilidades y herramientas entre jóvenes <br class="md:block hidden">
-							agricultores del Occidente de Honduras para afrontar de manera óptima la <br class="md:block hidden">
-							combinación del cultivo de café y el cambio climático. Al desarrollar este conocimiento, <br class="md:block hidden">
-							los jóvenes pueden tomar la iniciativa en el fortalecimiento de las organizaciones<br class="md:block hidden">
+							El proyecto se centra en desarrollar habilidades y herramientas entre jóvenes <br class="hidden md:block">
+							agricultores del Occidente de Honduras para afrontar de manera óptima la <br class="hidden md:block">
+							combinación del cultivo de café y el cambio climático. Al desarrollar este conocimiento, <br class="hidden md:block">
+							los jóvenes pueden tomar la iniciativa en el fortalecimiento de las organizaciones<br class="hidden md:block">
 							locales de productores de café y la mejora de la resiliencia climática. 
 						</p>
 					</div>
@@ -532,22 +532,22 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 								  </svg>
 								  
 							</div>
-							<div class="md:mt-0 mt-5">
+							<div class="mt-5 md:mt-0">
 								<div class="grid grid-cols-2 gap-1 md:p-6 transform md:scale-[0.9] scale-[0.75]" >
 									<div >
-										<Image src={Images.ma1} class="rounded-t-lg rounded-b-lg svg-scale-hover w-full h-full object-cover astro-a" alt="" />
+										<Image src={Images.ma1} class="object-cover w-full h-full rounded-t-lg rounded-b-lg svg-scale-hover astro-a" alt="" />
 									</div>
 									<div>
-										<Image src={Images.ma2} class="rounded-t-lg rounded-b-lg svg-scale-hover w-full h-full object-cover astro-a" alt="" />
+										<Image src={Images.ma2} class="object-cover w-full h-full rounded-t-lg rounded-b-lg svg-scale-hover astro-a" alt="" />
 									</div>
 									<div>
-										<Image src={Images.ma3} class="rounded-t-lg rounded-b-lg svg-scale-hover w-full h-full object-cover astro-a" alt="" />
+										<Image src={Images.ma3} class="object-cover w-full h-full rounded-t-lg rounded-b-lg svg-scale-hover astro-a" alt="" />
 									</div>
 									<div>
-										<Image src={Images.ma4} class="rounded-t-lg rounded-b-lg svg-scale-hover w-full h-full object-cover astro-a" alt="" />
+										<Image src={Images.ma4} class="object-cover w-full h-full rounded-t-lg rounded-b-lg svg-scale-hover astro-a" alt="" />
 									</div>
 									<div class="col-span-2">
-										<Image src={Images.ma5} class="rounded-t-lg rounded-b-lg svg-scale-hover w-full h-full object-cover astro-a" alt="" />
+										<Image src={Images.ma5} class="object-cover w-full h-full rounded-t-lg rounded-b-lg svg-scale-hover astro-a" alt="" />
 									</div>
 								</div>
 							</div>
@@ -561,12 +561,12 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 		</section>
 
 		<section class="py-20 pt-5 bg-[#F1F4F4] relative" style={` `}>
-			<div class="container px-5 md:px-20 pt-16 mx-auto  pb-10">
+			<div class="container px-5 pt-16 pb-10 mx-auto md:px-20">
 				<div class="text-[27px] uppercase text-center pb-5  font-medium text-[#384753] ">
 					¿COMO ABARCAREMOS EL CAMBIO CLIMATICO?
 				</div>
-				<div class="md:px-40 p-5 md:py-20">
-					<Image src={Images.climatico} class="rounded-t-lg w-full h-full object-cover astro-a" alt="" />
+				<div class="p-5 md:px-40 md:py-20">
+					<Image src={Images.climatico} class="object-cover w-full h-full rounded-t-lg astro-a" alt="" />
 				</div>
 				<div class="text-[27px] uppercase text-center pb-5 md:pt-0 pt-10   font-medium text-[#384753]">
 					CASOS REALES
@@ -617,7 +617,7 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						</div>
 					</main>
 					<button slot="close" class="absolute top-1 right-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white md:text-gray-300">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
@@ -675,7 +675,7 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						</div>
 					</main>
 					<button slot="close" class="absolute top-1 right-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white md:text-gray-300">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
@@ -722,24 +722,24 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 						
 					</main>
 					<button slot="close" class="absolute top-1 right-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-gray-300 text-white">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white md:text-gray-300">
 							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
 				</Modal>
-				<div class='md:px-10 mt-10'>
-					<div class="swiper  ">
+				<div class='mt-10 md:px-10'>
+					<div class="swiper ">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide" onclick="window.yanci.showModal()">
-								<div class='absolute bottom-10 button-modal left-2/4 transform -translate-x-2/4'>
+								<div class='absolute transform bottom-10 button-modal left-2/4 -translate-x-2/4'>
 									<button class='border-[#fff] bg-white  border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white font-medium text-[#384753] transition-all'> 
 										CONOCE MÁS
 									</button>
 								</div>
 								<Image src={Images.slider1} class="h-[510px] rounded-t-lg rounded-b-lg w-full object-cover astro-a" alt="" />
 								
-								<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
-									<div class="mt-auto px-10 pb-20">
+								<div class='absolute top-0 left-0 flex justify-center w-full h-full swiper-info'>
+									<div class="px-10 pb-20 mt-auto">
 										<div class="text-[27px uppercase text-center  font-medium text-white">
 											Yanci Y. Santos.
 										</div>
@@ -750,39 +750,39 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 								</div>
 							</div>
 							<div class="swiper-slide"  onclick="window.jaime.showModal()">
-								<div class='absolute bottom-10 button-modal left-2/4 transform -translate-x-2/4'>
+								<div class='absolute transform bottom-10 button-modal left-2/4 -translate-x-2/4'>
 									<button class='border-[#fff] bg-white  border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white font-medium text-[#384753] transition-all'> 
 										CONOCE MÁS
 									</button>
 								</div>
 								<Image src={Images.slider2} class="h-[510px] rounded-t-lg rounded-b-lg w-full  object-cover astro-a" alt="" />
-								<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
-									<div class="mt-auto px-10 pb-20">
-										<div class=" uppercase text-center  font-medium text-white">
+								<div class='absolute top-0 left-0 flex justify-center w-full h-full swiper-info'>
+									<div class="px-10 pb-20 mt-auto">
+										<div class="font-medium text-center text-white uppercase ">
 											JAIME DONARI PINEDA ARITA.
 
 										</div>
-										<div class=" uppercase text-center  font-medium text-white">
+										<div class="font-medium text-center text-white uppercase ">
 											Honduras · Edad: 27
 										</div>
 									</div>	
 								</div>
 							</div>
 							<div class="swiper-slide"  onclick="window.william.showModal()">
-								<div class='absolute bottom-10 button-modal left-2/4 transform -translate-x-2/4'>
+								<div class='absolute transform bottom-10 button-modal left-2/4 -translate-x-2/4'>
 									<button class='border-[#fff] bg-white  border-2 text-[12px] border px-2 py-2 mt-auto mb-10 hover:bg-[#384753] hover:text-white font-medium text-[#384753] transition-all'> 
 										CONOCE MÁS
 									</button>
 								</div>
 								<Image src={Images.slider3} class="h-[510px] rounded-t-lg rounded-b-lg w-full  object-cover astro-a" alt="" />
-								<div class='absolute top-0 left-0 w-full h-full swiper-info flex justify-center'>
-									<div class="mt-auto px-10 pb-20">
-										<div class=" uppercase text-center  font-medium text-white">
+								<div class='absolute top-0 left-0 flex justify-center w-full h-full swiper-info'>
+									<div class="px-10 pb-20 mt-auto">
+										<div class="font-medium text-center text-white uppercase ">
 											WILLIAM YOSIMAR MOREIRA PLEITEZ 
 
 
 										</div>
-										<div class=" uppercase text-center  font-medium text-white">
+										<div class="font-medium text-center text-white uppercase ">
 											Honduras · Edad: 16
 										</div>
 									</div>	
@@ -800,13 +800,13 @@ para hacernos cargo del empoderamiento y acompañamiento de los jóvenes.
 
 		<div class="bg-[#F2F4F4]">
 			<div class="text-[22px] md:text-[27px] uppercase text-center py-20   font-medium text-[#384753]">
-				TU PREFERENCIA APORTA A UN MODELO <br class="md:block hidden">
+				TU PREFERENCIA APORTA A UN MODELO <br class="hidden md:block">
 				360° DE CONSUMO RESPONSABLE.
 			</div>
 		</div>
 		
 		<footer class="bg-[#384753]">
-			<div class="py-36 flex justify-center flex-col items-center">
+			<div class="flex flex-col items-center justify-center py-36">
 				<svg xmlns="http://www.w3.org/2000/svg" width="108.94" height="108.94" viewBox="0 0 108.94 108.94">
 					<g id="Grupo_17" data-name="Grupo 17" transform="translate(-905.53 -2815.847)">
 					  <path id="Trazado_44" data-name="Trazado 44" d="M959.916,2815.847a54.5,54.5,0,0,0-54.386,54.3c.044,30.159,24.411,54.654,54.351,54.637a54.47,54.47,0,1,0,.035-108.94m-.327,104.028c-27.184-.12-49.287-22.625-49.128-50.019a49.579,49.579,0,1,1,49.128,50.019" fill="#fff"/>

@@ -70,3 +70,7 @@ export { default as ma5 } from './ma5.png';
 export { default as productos_todos } from './compromiso_ambiental/productos_todos.png';
 
 export { default as d1 } from './1d.png';
+
+export { default as bajo } from './bajo.jpeg';
+export { default as cambioclimatico } from './cambioclimatico.jpg';
+export { default as flutuacion } from './flutuacion.jpeg';
